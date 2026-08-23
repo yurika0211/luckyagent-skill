@@ -2,13 +2,19 @@
 
 Community skills and reusable workflows for [LuckyAgent](https://github.com/yurika0211/LuckyAgent) users.
 
-> **Status:** Repository initialized. No skills are included yet.
+> **Status:** Repository initialized with three Obsidian skills. More skills may be added later.
 
 ## What this project is
 
 `luckyagent-skill` is the future home for user-oriented LuckyAgent skills: focused, reusable instructions and supporting resources that help LuckyAgent users complete practical tasks more reliably.
 
-The repository is intentionally starting empty of actual skills. Skills will be added after their scope, activation conditions, documentation, and validation requirements are agreed upon.
+The repository currently includes these Obsidian-focused skills:
+
+- [`obsidian-markdown`](./obsidian-markdown) — Create and edit Obsidian Flavored Markdown with properties, wikilinks, embeds, callouts, and tags.
+- [`obsidian-cli`](./obsidian-cli) — Use the official Obsidian CLI for vault search, backlinks, tags, tasks, properties, bases, templates, and other index-powered operations.
+- [`obsidian-bases`](./obsidian-bases) — Create and edit Obsidian Bases with filters, formulas, and table, card, list, or map views.
+
+Each skill is self-contained and includes its own `SKILL.md`.
 
 ## Planned structure
 
