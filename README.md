@@ -31,6 +31,17 @@ Focused, reusable `SKILL.md` workflows that help LuckyAgent complete practical t
 - [`better-interface`](./better-interface) — Full interface review orchestrator
 - [`imagegen`](./imagegen) — Raster image generation/editing via LuckyAgent
 
+### Figma (Figma Developer Terms)
+Source: [openai/skills](https://github.com/openai/skills) curated set. Requires Figma MCP / `use_figma`. Each skill directory has its own `LICENSE.TXT` (not MIT).
+- [`figma`](./figma) — Figma MCP entry: design context, screenshots, assets → code
+- [`figma-use`](./figma-use) — Mandatory prep before every `use_figma` call
+- [`figma-implement-design`](./figma-implement-design) — Figma → production UI with visual parity
+- [`figma-generate-design`](./figma-generate-design) — App/page layout → Figma
+- [`figma-generate-library`](./figma-generate-library) — Codebase → Figma design system / library
+- [`figma-create-new-file`](./figma-create-new-file) — Create a blank Figma/FigJam file
+- [`figma-create-design-system-rules`](./figma-create-design-system-rules) — Generate project design-system rules
+- [`figma-code-connect-components`](./figma-code-connect-components) — Map Figma components to code (Code Connect)
+
 ### Hiring / verification
 - [`resume-audit`](./resume-audit) — Résumé verification entry
 - [`github-audit`](./github-audit) — Contribution substance audit
@@ -65,4 +76,6 @@ skill-name/
 
 ## License
 
-MIT. See [LICENSE](LICENSE).
+MIT for this repository’s original content. See [LICENSE](LICENSE).
+
+Individual skill directories may carry a different license (for example the Figma set uses the [Figma Developer Terms](https://www.figma.com/legal/developer-terms/)). Always check the skill’s own `LICENSE` / `LICENSE.TXT` before redistributing.
