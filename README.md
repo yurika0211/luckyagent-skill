@@ -1,53 +1,67 @@
 # luckyagent-skill
 
-Community skills and reusable workflows for [LuckyAgent](https://github.com/yurika0211/LuckyAgent) users.
-
-> **Status:** Repository initialized with three Obsidian skills; more skills have been added since.
+Community skills and reusable workflows for [LuckyAgent](https://github.com/yurika0211/lucky-agent) users.
 
 ## What this project is
 
-`luckyagent-skill` is the future home for user-oriented LuckyAgent skills: focused, reusable instructions and supporting resources that help LuckyAgent users complete practical tasks more reliably.
+Focused, reusable `SKILL.md` workflows that help LuckyAgent complete practical tasks more reliably. Each skill is self-contained and MIT-licensed unless a skill directory says otherwise.
 
-The repository currently includes these skills:
+## Skills
 
-- [`obsidian-markdown`](./obsidian-markdown) — Create and edit Obsidian Flavored Markdown with properties, wikilinks, embeds, callouts, and tags.
-- [`obsidian-cli`](./obsidian-cli) — Use the official Obsidian CLI for vault search, backlinks, tags, tasks, properties, bases, templates, and other index-powered operations.
-- [`obsidian-bases`](./obsidian-bases) — Create and edit Obsidian Bases with filters, formulas, and table, card, list, or map views.
-- [`find-nearby`](./find-nearby) — Find nearby places (restaurants, cafes, bars, pharmacies, etc.) using OpenStreetMap. Works with coordinates, addresses, cities, zip codes, or Telegram location pins. No API keys needed.
-- [`karpathy-ponytail`](./karpathy-ponytail)
-- [`resume-audit`](./resume-audit) — Résumé verification main entry: claim extraction → timeline → domain attribution → external checks → seven-tier evidence report + interview questions.
-- [`github-audit`](./github-audit) — Audit the real scale and domain attribution of open-source contributions (per-PR diff classification).
-- [`project-check`](./project-check) — Check project-description fit, personal contribution boundaries, and project-type difficulty baselines.
-- [`blog-check`](./blog-check) — Verify blog originality (whole-paragraph verbatim comparison + hit rate).
-- [`credential-check`](./credential-check) — Verify papers/patents/competitions/certificates against authoritative sources.
-- [`pipeline-pattern`](./pipeline-pattern) — Detect structural similarity across batch résumés (weight-only, never used for elimination).
-- [`grill`](./grill) — Generate 3–6 trap-laden interview questions with opening scripts and scoring rubrics. — Behavioral guidelines merging Andrej Karpathy's LLM coding observations with Ponytail's laziness ladder (think before coding, simplicity, surgical changes, root-cause fixes).
+### Knowledge & notes
+- [`obsidian-markdown`](./obsidian-markdown) — Obsidian Flavored Markdown
+- [`obsidian-cli`](./obsidian-cli) — Official Obsidian CLI workflows
+- [`obsidian-bases`](./obsidian-bases) — Obsidian Bases (`.base`)
+- [`find-docs`](./find-docs) — Current library/framework docs before coding
+- [`defuddle`](./defuddle) — Clean URL → Markdown extraction
 
-Each skill is self-contained and includes its own `SKILL.md`.
+### Office documents
+- [`docx`](./docx) — Word documents
+- [`pdf`](./pdf) — PDF read/create/merge/split
+- [`pptx`](./pptx) — Slides / decks
+- [`xlsx`](./xlsx) — Spreadsheets and CSV cleanup
 
-## Planned structure
+### Design / UI
+- [`better-ui`](./better-ui) — Visual polish, motion, icons, surfaces
+- [`better-layout`](./better-layout) — Spacing, grouping, responsive structure
+- [`better-colors`](./better-colors) — Tokens, contrast, palettes
+- [`better-typography`](./better-typography) — Type scale and readability
+- [`better-accessibility`](./better-accessibility) — Keyboard, focus, ARIA minima
+- [`better-writing`](./better-writing) — UX microcopy
+- [`better-interface`](./better-interface) — Full interface review orchestrator
+- [`imagegen`](./imagegen) — Raster image generation/editing via LuckyAgent
 
-A skill will normally live in its own directory:
+### Hiring / verification
+- [`resume-audit`](./resume-audit) — Résumé verification entry
+- [`github-audit`](./github-audit) — Contribution substance audit
+- [`project-check`](./project-check) — Project claim vs reality
+- [`blog-check`](./blog-check) — Technical writing originality checks
+- [`credential-check`](./credential-check) — Papers/patents/certs verification
+- [`pipeline-pattern`](./pipeline-pattern) — Batch résumé template similarity
+- [`grill`](./grill) — Interview question generation
+
+### Other
+- [`find-nearby`](./find-nearby) — Nearby places via OpenStreetMap
+- [`karpathy-ponytail`](./karpathy-ponytail) — Coding behavior guidelines
+
+## Skill layout
 
 ```text
 skill-name/
-├── SKILL.md          # Required skill instructions and metadata
-├── agents/           # Optional UI metadata
-├── references/       # Optional detailed reference material
-├── scripts/          # Optional helper scripts
-└── assets/           # Optional supporting assets
+├── SKILL.md          # required
+├── agents/           # optional UI metadata
+├── references/       # optional deep docs
+├── scripts/          # optional helpers
+└── assets/           # optional assets
 ```
 
 ## Contributing
 
-Before adding a skill:
-
-1. Open an issue describing the user problem and intended workflow.
-2. Keep the skill focused on one coherent capability.
-3. Document when the skill should and should not be used.
-4. Avoid secrets, credentials, private data, and environment-specific assumptions.
-5. Add examples and validation steps where they improve reliability.
-6. Keep `SKILL.md` concise; move deep reference material into linked files.
+1. Keep one coherent capability per skill.
+2. Document when to use / when not to use.
+3. No secrets, credentials, or machine-specific paths.
+4. Prefer concise `SKILL.md`; put long reference material in `references/`.
+5. Open a PR with a short rationale.
 
 ## License
 
