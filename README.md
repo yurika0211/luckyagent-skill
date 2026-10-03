@@ -55,6 +55,10 @@ Source: [openai/skills](https://github.com/openai/skills) curated set. Requires 
 - [`find-nearby`](./find-nearby) — Nearby places via OpenStreetMap
 - [`karpathy-ponytail`](./karpathy-ponytail) — Coding behavior guidelines
 
+
+### Coding agents
+- [`aoci-code`](./aoci-code) — AOCI-CODE CLI/MCP workflows: init+scan, Overview, maintain Whole-Index
+
 ## Skill layout
 
 ```text

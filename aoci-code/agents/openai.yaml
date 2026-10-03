@@ -1,0 +1,4 @@
+interface:
+  display_name: "AOCI-CODE"
+  short_description: "Governed codebase cognition map via aoci CLI/MCP"
+  default_prompt: "为目标仓库接入 AOCI-CODE：确认 aoci、init+scan、MCP，再按 Guide 建立或维护索引"
