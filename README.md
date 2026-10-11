@@ -56,6 +56,15 @@ Source: [openai/skills](https://github.com/openai/skills) curated set. Requires 
 - [`karpathy-ponytail`](./karpathy-ponytail) — Coding behavior guidelines
 
 
+### Review
+- [`review-agent`](./review-agent) — Read-only, defect-first review of a code change
+- [`security-review`](./security-review) — Auth, JWT, OAuth, IDOR, and secret-handling audit
+- [`owasp`](./owasp) — OWASP 2021 Top 10 audit with file-level findings
+- [`secure`](./secure) — Full-stack security posture score
+- [`preflight`](./preflight) — Read-only pre-deploy gate: build, tests, secrets, status
+- [`bug-triage`](./bug-triage) — Rank bugs and issues with reproduction evidence
+- [`root-cause`](./root-cause) — Hypothesis-driven debugging to a proven cause
+
 ### Coding agents
 - [`aoci-code`](./aoci-code) — AOCI-CODE CLI/MCP workflows: init+scan, Overview, maintain Whole-Index
 
