@@ -1,6 +1,6 @@
 interface:
   display_name: "Orchestrator Herdr"
-  short_description: "Run the Herdr expert pool from the personal agent"
+  short_description: "Start planners in the plan pool workspace"
   default_prompt: "Use $orchestrator-herdr to start or scale the planner pool and send this task to an idle planner."
 policy:
   allow_implicit_invocation: false

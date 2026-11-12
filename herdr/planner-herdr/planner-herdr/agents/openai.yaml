@@ -1,0 +1,6 @@
+interface:
+  display_name: "Planner Herdr"
+  short_description: "Dispatch dev, review, and docs pool workspaces"
+  default_prompt: "Use $planner-herdr to split this task across executor, reviewer, and commenter and return one report."
+policy:
+  allow_implicit_invocation: false
