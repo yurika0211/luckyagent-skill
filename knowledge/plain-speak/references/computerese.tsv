@@ -1,0 +1,1025 @@
+slug	en	zh	source
+abstract_factory	Abstract Factory	抽象工厂	computerese
+abstract_factory_pattern	Abstract Factory Pattern	抽象工厂模式	computerese
+abstraction_layer	abstraction layer	抽象层	computerese
+access	access	获取	computerese
+access_modifier	access modifier	访问修饰符	computerese
+acoustic_coupler	acoustic coupler	声音耦合器	computerese
+active_directory	Active Directory	活动目录	computerese
+acyclic_dependencies_principle	Acyclic Dependencies Principle	非循环依赖原则（ADP）	computerese
+acyclic_digraph	acyclic digraph	有向无环图	computerese
+adapter	Adapter	适配器	computerese
+adapter_pattern	Adapter Pattern	适配器模式	computerese
+adaptive_code	Adaptive Code	自适应代码	computerese
+add_parameter	Add Parameter	添加参数	computerese
+adsl	ADSL	非对称数字用户环线	computerese
+affinity	affinity	绑定	computerese
+affinity_group	affinity group	地缘组	computerese
+agent	agent	代理	computerese
+agent_based_interface	agent-based interface	代理人界面	computerese
+aggregate	Aggregate	聚合	computerese
+aggregate_root	Aggregate Root	聚合根	computerese
+agile	Agile	敏捷方法论	computerese
+agile_practice	agile practice	敏捷实践	computerese
+agile_process	agile process	敏捷流程	computerese
+agility	agility	敏捷性	computerese
+ai	AI	人工智能	computerese
+air_waves	air waves	无线电波	computerese
+algorithm	algorithm	算法	computerese
+algorithm_of_thought	Algorithm-of-Thought	思维算法（AoT）	computerese
+analog	analog	模拟的	computerese
+animation	animation	动画	computerese
+annotation	annotation	注解	computerese
+answering_machine	answering machine	电话应答机	computerese
+antenna	antenna	天线	computerese
+anti_pattern	anti-pattern	反模式	computerese
+aot	AoT	思维算法（Algorithm-of-Thought）	computerese
+apm	APM	异步编程模型（Asynchronous Programming Model）	computerese
+apocalyptic_defect	Apocalyptic defect	灾难缺陷	computerese
+application	application	应用	computerese
+application_life_cycle	application life cycle	应用程序生命周期	computerese
+application_pool	application pool	应用程序池	computerese
+application_programming_interface	Application Programming Interface	应用程序编程接口（API）	computerese
+application_service	Application Service	应用服务	computerese
+arbitrary_error	arbitrary error	任意错误	computerese
+architecture	architecture	体系机构	computerese
+architecture_decay	architecture decay	架构腐坏	computerese
+architecture_style	Architecture Style	架构风格	computerese
+arpa	ARPA	美国国防部）高级研究计划署	computerese
+arpanet	ARPAnet	网	computerese
+arrange_act_assert	Arrange-Act-Assert	准备-执行-断言（AAA）	computerese
+artifact	artifact	构建物4	computerese
+asf	ASF	的简写	computerese
+aspect_oriented_programming	Aspect-Oriented Programming	面向切面编程（AOP）	computerese
+aspect_ratio	aspect ratio	屏幕高宽比	computerese
+assembly	assembly	程序集	computerese
+associative_array	associative array	关联数组	computerese
+asynchronous_programming_model	Asynchronous Programming Model	异步编程模型（APM）	computerese
+atm	ATM	异步传输模式	computerese
+atomic_operation	atomic operation	原子操作	computerese
+atomic_transaction	atomic transaction	原子事务	computerese
+atomicity	atomicity	原子性	computerese
+attribute	attribute	特性（C#）、属性（Java 等）	computerese
+augmented_reality	augmented reality	增强实现（AR）	computerese
+authentication	authentication	身份验证	computerese
+authorization	authorization	授权	computerese
+auto_generated_properties	auto-generated properties	自动生成的属性	computerese
+automated_unit_testing	automated unit testing	自动化单元测试	computerese
+automation	automation	自动化	computerese
+autonomous	autonomous	独立性	computerese
+auxiliary_database	auxiliary database	辅助数据库	computerese
+availability	availability	可用性	computerese
+availability_set	availability set	可用性集	computerese
+azs	AZs	可用性区域（Availability Zones	computerese
+baas	BaaS	电池即服务（电池租用商业模式）	computerese
+backend_as_a_service	Backend as a Service	后端即服务（BaaS）	computerese
+backpane	backpane	底板	computerese
+backward_compatibility	backward compatibility	向后兼容性	computerese
+bandwidth	bandwidth	带宽	computerese
+bar_code	bar code	条形码	computerese
+base_class_library	Base Class Library	基类库（BCL）	computerese
+baseline	baseline	准线	computerese
+baud	baud	波特	computerese
+bcl	BCL	基类库（Base Class Library）	computerese
+bear	bear	熊	computerese
+behavior	behavior	行为	computerese
+behavior_preserving_program_transformations	behavior preserving program transformations	行为保留式程序转换1	computerese
+behavioral_design_patterns	Behavioral Design Patterns	行为性设计模式	computerese
+behavioral_error	Behavioral error	行为错误	computerese
+bert	BERT	谷歌公司的 LLM	computerese
+bff	BFF	为前端服务的后端（Backends For Frontends）4	computerese
+bfs	BFS	广度优先搜索	computerese
+big_ball_of_mud	Big Ball of Mud	大泥球（BBM）	computerese
+big_data	big data	大数据	computerese
+big_design_up_front	Big Design Up Front	大优先设计（BDUF）	computerese
+binary	binary	二进制的	computerese
+binochlar	binochlar	双目并用的	computerese
+bit	bit	比特	computerese
+bit_field	Bit-field	位域	computerese
+bitnik	bitnik	比特族	computerese
+block	block	阻断	computerese
+block_blob	block blob	块 BLOB	computerese
+blockchain_as_a_service	Blockchain as a Service	区块链即服务（BaaS）	computerese
+bottleneck	bottleneck	瓶颈	computerese
+bounded_context	bounded context	边界上下文、界限上下文4	computerese
+box	box	装箱	computerese
+bps	bps	比特/秒	computerese
+brainstorming	Brainstorming	头脑风暴（脑暴）	computerese
+brd	BRD	商业需求文档（Business Requirements Document）	computerese
+breakpoint	breakpoint	断点	computerese
+bridge	Bridge	桥接	computerese
+bridge_pattern	Bridge Pattern	桥接模式	computerese
+broadcast	broadcast	无线电或电视）广播	computerese
+broken_hierarchy	Broken Hierarchy	支离破碎的层次结构2	computerese
+broken_modularization	Broken Modularization	拆散的模块化2	computerese
+brownfield_project	brownfield project	行进中项目	computerese
+browser_object_model	Browser Object Model	浏览器对象模型（BOM）	computerese
+browser_server	browser-server	浏览器-服务器	computerese
+bug	bug	缺陷	computerese
+builder_pattern	Builder Pattern	建造者模式	computerese
+built_in	built-in	内置的	computerese
+bulkhead	bulkhead	舱壁4	computerese
+business_intelligence	business intelligence	商业智能	computerese
+business_layer	business layer	业务层	computerese
+business_logic_layer	business logic layer	业务逻辑层	computerese
+business_requirements_document	Business Requirements Document	商业需求文档（BRD）	computerese
+busy_status	busy (status)	忙（状态）	computerese
+byte	byte	字节	computerese
+cable	cable	电缆	computerese
+cache_caching	Cache/Caching	缓存	computerese
+call_stack	call stack	调用堆栈	computerese
+callout_box	callout box	标注框	computerese
+camelcase	camelCase	大小写	computerese
+canary_releasing	canary releasing	金丝雀发布4	computerese
+carbon_copy	carbon copy	复写本	computerese
+carriage_return	carriage return	回车	computerese
+cascading_style_sheets	Cascading Style Sheets	层叠样式表（CSS）	computerese
+catastrophic_failover	catastrophic failover	灾难性故障转移4	computerese
+cd	CD	持续交付（Continuous Delivery）4	computerese
+cdc	CDC	消费者驱动的契约（Customer-Driven Contract）4	computerese
+cdn	CDN	内容分发网络（Content Delivery Network）	computerese
+cell	cell	单元	computerese
+cellular_telephone	cellular telephone	移动电话	computerese
+central_processing_unit	Central Processing Unit	中央处理器（CPU）	computerese
+certificate	certificate	数字）证书	computerese
+certificate_authority	Certificate Authority	证书认证机构	computerese
+chain_of_responsibility	Chain of Responsibility	责任链	computerese
+chain_of_responsibility_pattern	Chain of Responsibility Pattern	责任链模式	computerese
+chain_of_thought	Chain-of-Thought	思维链（CoT）	computerese
+chain_of_thought_self_consistency	Chain-of-Thought-Self-Consistency	思维链自洽性	computerese
+change_bidirectional_association_to_unidirectional	Change Bidirectional Association to Unidirectional	将双向关联改为单向关联1	computerese
+change_point	Change Point	修改点：需要往代码中引入修改的点	computerese
+change_reference_to_value	Change Reference to Value	将引用对象改为值对象1	computerese
+change_unidirectional_association_to_bidirectional	Change Unidirectional Association to Bidirectional	将单向关联改为双向关联1	computerese
+change_value_to_reference	Change Value to Reference	将值对象改为引用对象1	computerese
+channel	channel	信道	computerese
+character	character	字符	computerese
+characterization_test	Characterization test	特征测试：描述软件某部分的当前行为的测试	computerese
+check_in	check in	签入	computerese
+check_out	check out	签出	computerese
+checksum	checksum	校验和	computerese
+chip	chip	芯片	computerese
+choreography	choreography	协同	computerese
+ci	CI	持续集成（Continuous Integration）4	computerese
+cipher	cipher	密码	computerese
+claim	claim	声明	computerese
+class_definition	class definition	类定义	computerese
+clean_object_oriented_and_layered_architecture	Clean Object-oriented and Layered Architecture	整洁面向对象分层架构（COLA）	computerese
+cli	CLI	公共语言基础结构（Common Language Infrastructure）	computerese
+client_server	client-server	客户端-服务器	computerese
+clone	clone	克隆	computerese
+cloud_computing	cloud computing	云计算	computerese
+cloud_service	cloud service	云服务	computerese
+clr	CLR	公共语言运行时（Common Language Runtime）	computerese
+cls	CLS	公共语言规范（Common Language Specification）	computerese
+cluster	cluster	集群	computerese
+clustered_index	clustered index	聚集索引	computerese
+co_occurring_smells	co-occurring smells	同时出现的坏味2	computerese
+coap	CoAP	受限应用协议	computerese
+coaxial_cable	coaxial cable	同轴电缆	computerese
+cobit	COBIT	信息和相关技术的控制目标	computerese
+coc	CoC	更改开销（Cost of Change）	computerese
+code_smell	code smell	代码味道	computerese
+cola	COLA	整洁面向对象分层架构	computerese
+collapse_hierarchy	Collapse Hierarchy	折叠继承关系1	computerese
+comcurrency	comcurrency	并发	computerese
+command	command	命令	computerese
+command_pattern	Command Pattern	命令模式	computerese
+command_prompt	command prompt	命令行提示	computerese
+command_query_responsibility_segregation	Command/Query Responsibility Segregation	命令/查询职责分离（CQRS）	computerese
+command_query_separation	Command/Query Separation	命令/查询分离（CQS）	computerese
+commingled_bits	commingled bits	混合的比特	computerese
+communication	communication	通信	computerese
+community	community	社区	computerese
+committed	committed	已提交（的）	computerese
+common_intermediate_language	Common Intermediate Language	公共中间语言	computerese
+common_language_infrastructure	Common Language Infrastructure	公共语言基础结构（CLI）	computerese
+common_language_runtime	Common Language Runtime	公共语言运行时（CLR）	computerese
+common_language_specification	Common Language Specification	公共语言规范（CLS）	computerese
+common_type_system	Common Type System	公共类型系统（CTS）	computerese
+common_name	common name	通用名称	computerese
+compatibility	compatibility	兼容性	computerese
+competing_consumer_pattern	Competing Consumer pattern	消费者竞争模式4	computerese
+compile_time_correctness_checking	compile-time correctness checking	编译时正确性检查	computerese
+component_object_model	Component Object Model	组件对象模型（COM）	computerese
+composability	Composability	组合性	computerese
+composite_formatting	composite formatting	复合格式化	computerese
+composite_pattern	Composite Pattern	复合模式、组合模式	computerese
+concurrency_conflicts	concurrency conflicts	并发冲突	computerese
+concurrency_mode	concurrency mode	并发模式	computerese
+conditional_compilation	conditional compilation	条件编译	computerese
+conditional_compilation_statement	conditional compilation statement	条件编译语句	computerese
+configuration	configuration	配置	computerese
+connection_string	connection string	连接字符串	computerese
+consolidate_conditional_expression	Consolidate Conditional Expression	合并条件表达式1	computerese
+consolidate_duplicate_conditional_fragments	Consolidate Duplicate Conditional Fragments	合并重复的条件片段1	computerese
+consistency	consistency	一致性	computerese
+constructor	constructor	构造函数	computerese
+container	container	容器	computerese
+container_as_a_service	Container As A Service	容器即服务（CaaS）4	computerese
+content	content	内容	computerese
+context	context	上下文	computerese
+context_map	context map, 上下文映射图	上下文地图	computerese
+context_mapping	Context Mapping	上下文映射	computerese
+contextual_keyword	contextual keyword	上下文关键字	computerese
+continuous_integration	continuous integration	持续集成	computerese
+contribute	contribute	贡献	computerese
+contributor_license_agreement	Contributor License Agreement	贡献者许可协议	computerese
+convention	convention	约定	computerese
+covariance	covariance	协变	computerese
+contravariance	contravariance	逆变	computerese
+convert	convert	转换	computerese
+convert_procedural_design_to_objects	Convert Procedural Design to Objects	将过程化设计转化为对象设计1	computerese
+copy_on_write	copy-on-write	写时复制	computerese
+core	core	内核	computerese
+core_domain	core domain	核心领域	computerese
+corruption	corruption	损毁	computerese
+cosmetic_issue	Cosmetic issue	外观上问题	computerese
+cost_of_change	Cost of Change	更改开销（CoC）	computerese
+cot	CoT	思维链（Chain-of-Thought）6	computerese
+cots	COTS	现成的商业软件（Commercial Off-The Shelf）4	computerese
+counterpoint	counterpoint	对位4	computerese
+coupling_count	Coupling count	耦合数：当一个方法被调用时传给它以及从它传出来的值的数目。如果该方法没有返回值	computerese
+cpu	CPU	中央处理器（Central Processing Unit）	computerese
+cqrs	CQRS	命令查询职责分离（Command-Query Responsibility Segregation）	computerese
+crash	crash	程序）崩溃	computerese
+crash_dump	crash dump	故障转储	computerese
+creational_design_patterns	Creational Design Patterns	创建性设计模式	computerese
+crc	CRC	类-职责-交互（class-responsibility-collaboration）4	computerese
+credential	credential	凭证4	computerese
+cririque	cririque	评估	computerese
+crm	CRM	客户关系管理（Customer Relationship Management）	computerese
+cross_domain	Cross Domain	跨域	computerese
+cross_browser	Cross-browser	跨浏览器	computerese
+cross_platform	Cross-platform	跨平台	computerese
+cross_functional_requirement	Cross-Functional Requirement	跨功能需求（CFR）4	computerese
+crt	CRT	阴极射线管	computerese
+cruft	cruft	残留	computerese
+cryptography	cryptography	密码术	computerese
+cts	CTS	公共类型系统（Common Type System）	computerese
+cursor	cursor	光标	computerese
+customizability	Customizability	可定制性	computerese
+cybraian	cybraian	电脑族	computerese
+cyberspace	cyberspace	电脑空间	computerese
+cycle_time	cycle time	周期时间	computerese
+cyclic_digraph	cyclic digraph	有向有环图	computerese
+cyclic_hierarchy	Cyclic Hierarchy	循环层次结构2	computerese
+cyclically_dependent_modularization	Cyclically-dependent Modularization	循环依赖式模块化2	computerese
+cyclomatic_complexity	Cyclomatic complexity	圈复杂度	computerese
+daas	DaaS	数据即服务	computerese
+dag	DAG	有向无循环图	computerese
+dashboard	dashboard	仪表盘	computerese
+data_access_layer	data access layer	数据访问层	computerese
+data_storage_as_a_service	Data Storage as a Service	数据存储即服务（DaaS）	computerese
+data_clumps	data clumps	数据泥团2	computerese
+data_encryption_standard	Data Encryption Standard	数据加密标准（DES）	computerese
+data_layer	data layer	数据层	computerese
+data_integrity	data integrity	数据完整性	computerese
+data_invariant	data invariant	数据不变式	computerese
+data_mining	data mining	数据挖掘	computerese
+data_pump	data pump	数据泵	computerese
+data_transfer_object	Data Transfer Object	数据传输对象（DTO）	computerese
+declarative_programming	declarative programming	宣告式编程	computerese
+decompose_conditional	Decompose Conditional	分解条件表达式1	computerese
+decorator_pattern	Decorator Pattern	修饰器模式（DP）、装饰模式	computerese
+deep_hierarchy	Deep Hierarchy	过深的层次结构2	computerese
+default_literal	Default Literal	默认常值	computerese
+defensive_programming	Defensive Programming	防御式编程	computerese
+deficient_encapsulation	Deficient Encapsulation	不充分的封装2	computerese
+definition_of_done	Definition of Done	完成的定义（DoD）	computerese
+denial_of_service_attacks	denial-of-service attacks	拒绝服务攻击4	computerese
+dependency_injection	dependency injection	依赖注入（DI）	computerese
+dependency	dependency	依赖	computerese
+dependency_digraph	dependency digraph	依赖有向图	computerese
+deployment	deployment	部署	computerese
+dequeue	dequeue	出列	computerese
+derives_from	derives from	继承	computerese
+design_pattern	design pattern	设计模式	computerese
+design_requirements_document	Design Requirements Document	交互设计说明文档（DRD）	computerese
+device	device	设备	computerese
+dfs	DFS	深度优先搜索	computerese
+dft	DfT	为可测试性而设计	computerese
+di	DI	依赖注入（dependency injection）	computerese
+diaas	DIaaS	数据智能即服务（出自2022年6月29日	computerese
+diagnostics	diagnostics	诊断	computerese
+directed_graph	directed graph	有向图	computerese
+directive	directive	指令	computerese
+dirt	DiRT	灾难恢复测试（Disaster Recovery Test）4	computerese
+discussion_forum	discussion forum	论坛	computerese
+disk	disk	磁盘	computerese
+distributed_system	distributed system	分布式系统	computerese
+dll	DLL	动态链接库（Dynamic Link Library）	computerese
+dns	DNS	域名系统（Domain Name System）	computerese
+document_object_model	Document Object Model	文档对象模型（DOM）	computerese
+domain_driven_design	domain-driven design	领域驱动设计（DDD）	computerese
+domain_event	Domain Event	领域事件	computerese
+domain_model	Domain Model	领域模型	computerese
+domain_name_system	Domain Name System	域名系统（DNS）	computerese
+domain_service	Domain Service	领域服务	computerese
+domain_specific_language	Domain Specific Language	领域特定语言（DSL）	computerese
+drd	DRD	交互设计说明文档（Design Requirements Document）	computerese
+dry	DRY 原则	不自我重复原则（Don't Repeat Yourself）	computerese
+duck_typing	duck-typing	鸭子类型	computerese
+duck_test	duck test	鸭子测试	computerese
+dummy_function	dummy function	虚构函数	computerese
+dump	dump	转储	computerese
+duplicate_abstraction	Duplicate Abstraction	重复的抽象2	computerese
+duplicate_observed_data	Duplicate Observed Data	复制“被监视数据”1	computerese
+durability	durability	持久性	computerese
+dynamic_link_library	Dynamic Link Library	动态链接库（DLL）	computerese
+eap	EAP	早期评估版本（Early Assessment Program）	computerese
+early_assessment_program	Early Assessment Program	早期评估版本（EAP）	computerese
+effect_sketch	effect sketch	影响草图	computerese
+egress	Egress	流出	computerese
+elasticity	elasticity	弹性	computerese
+elbs	ELBs	弹性负载均衡器（Elastic Load Balancers）4	computerese
+element_xml	Element (XML)	元素	computerese
+elvis_operator	Elvis Operator	埃尔维斯运算符	computerese
+emergence	Emergence	涌现、创发、突现、呈展、演生	computerese
+encapsulate_collection	Encapsulate Collection	封装集合1	computerese
+encapsulate_downset	Encapsulate Downset	封装向下转型1	computerese
+encapsulate_field	Encapsulate Field	封装字段1	computerese
+endpoint	endpoint	端点	computerese
+enqueue	enqueue	入列	computerese
+enterprise_resource_planning	Enterprise Resource Planning	企业资源计划（ERP）	computerese
+entity	entity	实体	computerese
+entity_tags	Entity Tags	实体标签（ETag）	computerese
+entourage_anti_pattern	entourage anti-pattern	随从反模式	computerese
+erosion	erosion	侵蚀	computerese
+event_based_asynchronous_pattern	Event-based Asynchronous Pattern	基于事件的异步模式（EAP）	computerese
+event_data_pump	event data pump	时间数据泵4	computerese
+event_sourcing	event sourcing	事件源	computerese
+evolvability	Evolvability	可进化性	computerese
+exception_handling	exception handling	异常处理	computerese
+exclusive_or	Exclusive OR	异或（XOR）	computerese
+explanatory_figures	explanatory figures	图示	computerese
+extensible_markup_language	Extensible Markup Language	可扩展标记语言（XML）	computerese
+extensibility	Extensibility	可扩展性	computerese
+extra_large	extra large	特大型	computerese
+extra_small	extra small	特小型	computerese
+extract_class	Extract Class	提炼类1	computerese
+extract_hierarchy	Extract Hierarchy	提炼继承体系1	computerese
+extract_interface	Extract Interface	提炼接口1	computerese
+extract_method	Extract Method	提炼函数1	computerese
+extract_subclass	Extract Subclass	提炼子类1	computerese
+extract_superclass	Extract Superclass	提炼超类1	computerese
+extreme_programming	eXtreme Programming	极限编程（XP）	computerese
+facade_pattern	Facade Pattern	外观模式	computerese
+factory_method_pattern	Factory Method Pattern	工厂方法模式	computerese
+failover	failover	容错转移	computerese
+failure_domain	failure domain	故障域	computerese
+fake_object	fake object	伪对象：在测试中伪装成一个类的合作者的对象	computerese
+fan_in	fan-in	扇入	computerese
+fan_out	fan-out	扇出	computerese
+fat_client	fat client	胖客户端	computerese
+fcl	FCL	类库（Framework Class Library）	computerese
+fdd	FDD	软盘（Floppy Disk Drive）	computerese
+feature_sketch	feature sketch	特性草图	computerese
+feed	feed	聚合（资源聚合）	computerese
+fine_tuning	fine-tuning	微调	computerese
+first_party	first-party	第一方	computerese
+floopy_disk_drive	Floopy Disk Drive	软盘（FDD）	computerese
+flyweight_pattern	Flyweight Pattern	享元模式	computerese
+follow_up	follow up	跟进	computerese
+foreign_key	foreign key	外键	computerese
+form_template_method	Form Template Method	塑造模板函数1	computerese
+format_item	format item	格式项	computerese
+format_string	format string	格式字符串	computerese
+forward	forward	转发	computerese
+fpp	FPP	零售版（Full Packaged Product）	computerese
+framework_class_library	Framework Class Library	类库（FCL）	computerese
+frd	FRD	功能需求文档（Functional Requirements Document）	computerese
+free	free	免费	computerese
+free_function	free function	自由函数：一个不属于任何类的函数。在 C 和其他过程式语言中	computerese
+functional_requirements_document	Functional Requirements Document	功能需求文档（FRD）	computerese
+full_duplex	full-duplex	全双工	computerese
+full_packaged_product	Full Packaged Product	零售版（FPP）	computerese
+function_pointers	Function Pointers	函数指针	computerese
+garbage_collection	Garbage Collection	垃圾回收器（GC）	computerese
+gauge	gauge	计量表4	computerese
+gc_heap	GC Heap	垃圾回收堆	computerese
+gc_root	GC root	根对象	computerese
+generalization	Generalization	泛化	computerese
+generalized_async	Generalized Async	通用异步	computerese
+generalized_async_return	Generalized Async Return	通用异步返回（C# 7.0）	computerese
+generalizing_specialist	generalizing specialist	全科专家（敏捷开发术语）	computerese
+generator	generator	生成器	computerese
+generic_attributes	Generic Attributes	泛型特性	computerese
+generic_math	Generic Math	泛型数学	computerese
+geo_replication	Geo-Replication	地域复制	computerese
+geo_redundant	Geo Redundant	地域冗余	computerese
+global_assembly_cache	Global Assembly Cache	全局程序集缓存（GAC）	computerese
+global_state	global state	全局状态	computerese
+global_using_directives	global using directives	全局 Using 指令	computerese
+goal_directed_design	Goal Directed Design	目标导向设计	computerese
+got	GoT	思维图	computerese
+gpt_3	GPT-3	是 OpenAI 最注明的 LLM 之一	computerese
+graph_of_thought	Graph-of-Thought	思维图	computerese
+graphical_user_interface	Graphical User Interface	图像用户界面设计（GUI）	computerese
+gui	GUI	图像用户界面设计（Graphical User Interface）	computerese
+hackable	Hackable	修改方便（根据《Web API 设计与开发》一书之翻译）	computerese
+hal	HAL	超文本应用程序语言（Hypertext Application Language）4	computerese
+handle	handle	句柄	computerese
+hard_disk_drive	Hard Disk Drive	硬盘（HDD）	computerese
+hateoas	HATEOAS	超媒体作为程序状态的引擎（Hypermedia As The Engine Of Application State）4	computerese
+hci	HCI	人机交互（Human-Computer Interaction）	computerese
+hdd	HDD	硬盘（Hard Disk Drive）	computerese
+header	header	头	computerese
+hexagonal_architecture	Hexagonal Architecture	六边形架构4	computerese
+hmac	HMAC	基于哈希的小系列码（Hash-based Message Authentication）4	computerese
+hide_delegate	Hide Delegate	隐藏“委托关系”1	computerese
+hide_method	Hide Method	隐藏函数1	computerese
+high_avaliability	High Avaliability	高可用性	computerese
+high_fidelity_prototype	High Fidelity Prototype	高保真原型	computerese
+high_surrogate	high surrogate	高位代理项	computerese
+homogeneous	Homogeneous	同质化	computerese
+hook	hook	钩子	computerese
+hook_point	hook point	挂接点	computerese
+horizontal_scale	Horizontal Scale	水平缩放	computerese
+hosting	Hosting	宿主	computerese
+hub_like_modularization	Hub-like Modularization	轮毂式模块化2	computerese
+hui	HUI	手持设备用户界面	computerese
+human_computer_interaction	Human-Computer Interaction	人机交互（HCI）	computerese
+humane_registry	Humane Registry	人文注册表（由 Martin Fowler 提出）4	computerese
+hybrid_cloud	Hybrid Cloud	混合云	computerese
+hypertext_driven	hypertext-driven	超文本驱动	computerese
+hypertext_markup_language	HyperText Markup Language	超文本标记语言（HTML）	computerese
+ia	IA	信息架构（Information Architect）	computerese
+iaas	Iaas	设施即服务（Infrastructure as a Service）	computerese
+idempotence	Idempotence	幂等性	computerese
+idempotent_operation	Idempotent Operation	幂等操作	computerese
+identity_provider	Identity Provider	身份提供方	computerese
+il	IL	中间语言（intermediate language）	computerese
+illegitimate_injection	Illegitimate Injection	非法注入	computerese
+im	IM	即时通讯（Instant Messaging）	computerese
+image	image	映像	computerese
+immersion_approach	immersion approach	沉浸法	computerese
+imperative_abstraction	Imperative Abstraction	命令式抽象2	computerese
+in_context_learning	in-context learning	上下文学习	computerese
+incomplete_abstraction	Incomplete Abstraction	不完整的抽象2	computerese
+index	index	索引	computerese
+information_architect	Information Architect	信息架构（IA）	computerese
+infrastructure_as_a_service	Infrastructure as a Service	设施即服务（Iaas）	computerese
+ingesting	ingesting	摄取	computerese
+ingress	ingress	流入	computerese
+inline_class	Inline Class	将类内联化1	computerese
+inline_method	Inline Method	内联函数1	computerese
+inline_temp	Inline Temp	内联临时变量1	computerese
+input_endpoint	input endpoint	输入端点	computerese
+instance	instance	实例	computerese
+instance_inputendpoint	Instance InputEndpoint	实例输入端点	computerese
+instant_messaging	Instant Messaging	即时通讯（IM）	computerese
+instantiation	instantiation	实例化	computerese
+instantiator	instantiator	实例化器	computerese
+instruction_fine_tuning	instruction fine-tuning	指令微调	computerese
+insufficient_modularization	Insufficient Modularization	不充分的模块化2	computerese
+interaction_based_testing	Interaction-based testing	基于交互的测试	computerese
+intercept	Intercept	截取	computerese
+interception_point	interception point	拦截点：可以编写测试来感知某些条件的地方	computerese
+intermediate_language	intermediate language	中间语言（IL）	computerese
+internal_endpoint	Internal Endpoint	内部端点	computerese
+internet_information_service	Internet Information Service	信息服务（IIS）	computerese
+internet_protocol	Internet Protocol	互联网协议（IP）	computerese
+interpreter_pattern	Interpreter Pattern	解释器模式	computerese
+interpolated_strings	interpolated strings	内插字符串	computerese
+introduce_assertion	Introduce Assertion	引入断言1	computerese
+introduce_explaining_variable	Introduce Explaining Variable	引入解释性变量1	computerese
+introduce_foreign_method	Introduce Foreign Method	引入外加函数1	computerese
+introduce_local_extension	Introduce Local Extension	引入本地扩展1	computerese
+introduce_null_object	Introduce Null Object	引入 Null 对象1	computerese
+introduce_parameter_object	Introduce Parameter Object	引入参数对象1	computerese
+intrusion_detection_systems	Intrusion Detection Systems	入侵检测系统（IDS）4	computerese
+intrusion_prevention_systems	Intrusion Prevention Systems	入侵预防系统（IPS）4	computerese
+inversion_of_control	Inversion of Control	控制反转（IoC）	computerese
+isolation	Isolation	隔离性	computerese
+isomorphism	isomorphism	同构（数学领域专用术语）	computerese
+iterable	iterable	可迭代的	computerese
+iteration	iteration	迭代	computerese
+iterator	iterator	迭代器	computerese
+iterator_pattern	Iterator Pattern	迭代模式	computerese
+iterator_protocol	iterator protocol	迭代器协议	computerese
+job	Job	作业	computerese
+job_description	Job Description	岗位描述（JD）	computerese
+jose	JOSE	对象签名和加密	computerese
+json_web_token	Json Web Token	令牌4	computerese
+just_in_time_compilation	just-in-time compilation	即时编译	computerese
+jvm	JVM	虚拟机（Java Virtual Machine）	computerese
+key	Key	密钥	computerese
+key_event_notification	key-event notification	键事件通知	computerese
+key_opinion_leader	Key Opinion Leader	关键意见领袖（KOL）	computerese
+key_performance_indicator	Key Performance Indicator	关键绩效考核指标（KPI）	computerese
+key_space	Key Space	键空间	computerese
+key_space_notification	key-space notification	键空间通知	computerese
+key_value_pair	Key-Value Pair	键-值对	computerese
+kiss	KISS 原则	保持简单原则（Keep It Simple Silly）	computerese
+kpi	KPI	关键绩效考核指标（Key Performance Indicator）	computerese
+language_integrated_query	Language Integrated Query	语言集成查询（LINQ）	computerese
+large	Large	大型	computerese
+large_language_model	Large Language Model	大型语言模型（LLM）	computerese
+layered_architecture	Layered Architecture	分层架构	computerese
+ldap	LDAP	轻型目录访问协议	computerese
+leaky_encapsulation	Leaky Encapsulation	泄露的封装2	computerese
+legacy_system	Legacy system	遗留系统	computerese
+license	license	许可证	computerese
+lifetime	lifetime	生命周期	computerese
+lightweight_directory_access_protocol	Lightweight Directory Access Protocol	轻量级目录访问协议（LDAP）4	computerese
+line_of_business	LINE of Business	业务线（LOB）4	computerese
+link	link	链接	computerese
+link_seam	link seam	连接期接缝：在连接期接缝处	computerese
+linked_resource	linked resource	链接的资源	computerese
+liskov_substitution_principle	Liskov Substitution Principle	里氏替换原则（LSP）	computerese
+literal	literal	字面量、文字常量、直接量	computerese
+living_style_guides	living style guides	活样式指导4	computerese
+llm	LLM	大型语言模型（Large Language Model）	computerese
+load_balancing	load-balancing	负载平衡	computerese
+load_balancer	load balancer	负载平衡器	computerese
+load_factor	load factor	负载因子	computerese
+load_shedding	load shedding	减载4	computerese
+loc	LOC	代码行数	computerese
+local_function	Local Function	局部函数	computerese
+lock_step_release	lock-step release	同步发布4	computerese
+log	log	日志	computerese
+loop	loop	自循环	computerese
+loose_coupling	loose coupling	松散耦合	computerese
+low_fidelity_prototype	Low Fidelity Prototype	低保真原型	computerese
+low_surrogate	low surrogate	低位代理项	computerese
+lsud	LSUD	大批你所不知道的开发人员（Large Set of Unknown Developers）	computerese
+mainframe	Mainframe	主机	computerese
+maintainability	Maintainability	可维护性	computerese
+managed_code	managed code	托管代码	computerese
+managed_execution	managed execution	托管执行	computerese
+man_in_the_middle_attack	Man-In-The-Middle Attack	中间人攻击（MITM 攻击）	computerese
+management_key	Management Key	管理密钥	computerese
+manifest	manifest	清单	computerese
+map	map	映射	computerese
+market_requirement_document	Market Requirement Document	市场需求文档（MRD）	computerese
+massive_multiplayer_online_role_playing_game	Massive Multiplayer Online Role-Playing Game	大型多人在线角色扮演游戏（MMORPG）	computerese
+massively_multiplayer_online_role_playing_game	Massively Multiplayer Online Role-Playing Game	大型多人在线角色扮演游戏（MMORPG）	computerese
+mathematical_markup_language	Mathematical Markup Language	数学标记语言（MathML）	computerese
+mean_time_between_failures	Mean Time Between Failures	平均故障时间间隔（MTBF）4	computerese
+mean_time_to_repair	Mean Time To Repair	平均修复时间（MTTR）4	computerese
+media_service	Media Service	媒体服务	computerese
+mediator_pattern	Mediator Pattern	中介者模式	computerese
+medium	Medium	中型	computerese
+memento_pattern	Memento Pattern	备忘录模式	computerese
+merge	Merge	合并	computerese
+metadata	Metadata	元数据	computerese
+metaprogramming	metaprogramming	元编程	computerese
+middleware	Middleware	中间件	computerese
+mind_map	mind map	思维导图、脑图、心智图	computerese
+minimum_marketable_feature	Minimum Marketable Feature	最小可售特性（MMF）	computerese
+minimum_viable_product	Minimum Viable Product	最小化可行产品（MVP）	computerese
+minimum_viable_release	Minimum Viable Release	最小可行发布（MVR）	computerese
+missing_abstraction	Missing Abstraction	缺失抽象2	computerese
+missing_encapsulation	Missing Encapsulation	缺失的封装2	computerese
+missing_hierarchy	Missing Hierarchy	缺失层次结构2	computerese
+mixed_reality	Mixed Reality	混合现实（MR）	computerese
+mobile_service	Mobile Service	移动服务	computerese
+mock_object	Mock Object	模拟对象	computerese
+move_field	Move Field	搬移字段1	computerese
+move_method	Move Method	搬移函数1	computerese
+mrd	MRD	市场需求文档（Market Requirement Document）	computerese
+multitenancy	Multitenancy	多租户	computerese
+multifaced_abstraction	Multifaced Abstraction	多方面抽象2	computerese
+multipath_hierarchy	Multipath Hierarchy	多路径层次结构2	computerese
+multitier_architecture	Multitier Architecture	多层体系结构	computerese
+multi_factor_authentication	Multi-factor Authentication	多重验证	computerese
+naming_collisions	naming collisions	命名冲突	computerese
+namespace	Namespace	命名空间	computerese
+native_code	native code	本机代码	computerese
+ncc	NCC	社区（.NET Core Community）/.NET 中国社区（.NET China Community）	computerese
+near_field_communication	Near Field Communication	近距离无线通信（NFC）	computerese
+network_hops	network hops	网络跳数	computerese
+nfc	NFC	近距离无线通信（Near Field Communication）	computerese
+nfx	nfx	框架）	computerese
+non_clustered_index	Non-clustered Index	非聚集索引	computerese
+non_managed_code	non-managed code	非托管代码	computerese
+non_optional	non-optional	非可选的	computerese
+non_transactional_pipeline	non-transactional pipeline	非事务型流水线	computerese
+node	node	节点	computerese
+normalize	normalize	规格化	computerese
+notification	notification	通知	computerese
+notification_hub	notification hub	通知中心	computerese
+null_object_pattern	Null Object Pattern	空对象模式	computerese
+null_coalescing	null-coalescing	空值合并	computerese
+null_coalescing_operator	Null coalescing operator	空值合并运算符、空值结合运算符	computerese
+n_tier	N-Tier	层（结构）	computerese
+obfuscator	obfuscator	混淆器	computerese
+object_pool	Object Pool	对象池	computerese
+object_pool_pattern	Object Pool Pattern	对象池模式	computerese
+object_relational_mapper	Object/Relational Mapper	对象/关系映射器（ORM	computerese
+object_seam	object seam	对象接缝：在对象连接处可以通过替换一个对象为另一个对象来“更替”行为。在面向对象语言中	computerese
+objectives_and_key_results	Objectives and Key Results	目标与关键成果法（OKR）	computerese
+observer_pattern	Observer Pattern	观察者模式	computerese
+on_demand_media	On-demand (media)	点播（媒体）	computerese
+once_and_only_once	Once and Only Once	一次且仅一次3(OAOO)	computerese
+one_rule_one_place	One rule, one place	一个规则	computerese
+one_time_token	one-time token	一次性令牌	computerese
+onion_architecture	Onion Architecture	洋葱架构	computerese
+open_closed_principle	Open Closed Principle	开闭原则（OCP）	computerese
+open_system_interconnection	Open System Interconnection	开放式系统互联（OSI）	computerese
+operating_system	Operating System	操作系统（OS）	computerese
+optical_character_recognition	Optical Character Recognition	光学字符识别（OCR）	computerese
+optimistic_concurrency	Optimistic Concurrency	乐观并发控制	computerese
+optimistic_locking	optimistic locking	乐观锁	computerese
+orchestration	orchestration	编排	computerese
+orchestration_layer	Orchestration Layer	策略编排层	computerese
+ordering_principal	Ordering Principal	良序原则	computerese
+os	OS	操作系统（Operating System）	computerese
+osgi	OSGI	开放服务网关协议（Open Source Gateway Initiative）4	computerese
+overriding	overriding	重写	computerese
+overview	Overview	概览	computerese
+over_post	over-post	过度提交	computerese
+owasp	OWASP	开放式 Web 应用程序安全项目（Open Web Application Security Project）4	computerese
+p2p	P2P	个人对个人（Person-to-Person）	computerese
+paas	Paas	平台即服务（Platform As A Service）	computerese
+packet_sniffing	packet sniffing	分组嗅探	computerese
+page_blob	Page Blob	页 BLOB	computerese
+parameterize_method	Parameterize Method	令函数携带参数1	computerese
+partial_translate	Partial Translate	部分翻译（出自 Chrome 浏览器）	computerese
+partition	partition	分区	computerese
+partition_tolerance	Partition tolerance	分区容忍性4	computerese
+pascalcase	PascalCase	大小写	computerese
+pass_through	pass-through	直托	computerese
+passive	passive	被动（的）	computerese
+pattern	pattern	模式	computerese
+pay_as_you_go	Pay as You Go	即用即付	computerese
+pc	PC	个人计算机（Personal Computer）	computerese
+peek	peek	查看	computerese
+peering_rules	peering rules	对等交互规则4	computerese
+percent_encoding	Percent Encoding	百分号编码	computerese
+performance	performance	性能	computerese
+performance_counter	performance counter	性能计数器	computerese
+performance_oriented	performance-oriented	面向性能	computerese
+person_to_person	Person-to-Person	个人对个人（P2P）	computerese
+personal_computer	Personal Computer	个人计算机（PC）	computerese
+pessimistic_concurrency	Pessimistic Concurrency	悲观并发控制	computerese
+pessimistic_locking	pessimistic locking	悲观锁	computerese
+phame	PHAME	由 Booch 提出的对象模型的 4 个主要元素的设计规则的统称	computerese
+pinch_point	pinch point	汇点：影响结构图中的隘口和交通要冲	computerese
+placeholder	placeholder	占位符	computerese
+platform_as_a_service	Platform as a Service	平台即服务（Paas）	computerese
+pmd	PMD	项目管理文档（Program Managment Document）	computerese
+point_of_invocation_of_the_method	point of invocation of the method	方法调用点	computerese
+point_to_site	Point-to-Site	点到站点	computerese
+polling	polling	轮询	computerese
+polymorphism	polymorphism	多态	computerese
+polyrot_programming	polyrot programming	多语言编程	computerese
+poor_mans_dependency_injection	Poor Man’s Dependency Injection	穷人的依赖注入	computerese
+post_initialization	post-initialization	后初始化	computerese
+postcondition	postcondition	后置条件	computerese
+pot	PoT	程序思维（Program-to-Thoughts）	computerese
+prd	PRD	产品需求文档（Product Requirements Document）	computerese
+pre_flight_request	pre-flight request	事先请求	computerese
+pre_initialization	pre-initialization	预初始化	computerese
+pre_training	pre-training	预训练	computerese
+predicate_decorator	Predicate Decorator	谓词修饰器	computerese
+precondition	precondition	前提	computerese
+presentation_layer	presentation layer	表现层	computerese
+preserve_whole_object	Preserve Whole Object	保持对象完整1	computerese
+primary_database	primary database	主数据库	computerese
+primary_storage	primary storage	主存储	computerese
+primitive_obsession	primitive obsession	基本类型偏执2	computerese
+principal	principal	主体4	computerese
+private_class_data_pattern	Private Class Data Pattern	私有类数据模式	computerese
+private_cloud	private cloud	私有云	computerese
+priority_queue	priority queue	优先级队列	computerese
+probe	probe	探测器	computerese
+process	process	进程	computerese
+producer	producer	生产者	computerese
+product_backlog	product backlog	产品积压工作	computerese
+product_owner	Product Owner	产品负责人（PO）	computerese
+product_requirements_document	Product Requirements Document	产品需求文档（PRD）	computerese
+production	production	生产（环境）	computerese
+production_load	production load	生产负载4	computerese
+program_managment_document	Program Managment Document	项目管理文档（PMD）	computerese
+program_to_thoughts	Program-to-Thoughts	程序思维（PoT）	computerese
+programming_by_difference	programming by difference	差异式编程	computerese
+proof_of_concept	proof of concept	概念验证	computerese
+proportional_error_rate	proportional error rate	错误率比例4	computerese
+protected_variation	protected variation	防止变异	computerese
+protocol	protocol	协议	computerese
+prototype	prototype	原型	computerese
+prototype_pattern	Prototype Pattern	原型模式	computerese
+proxy	proxy	代理	computerese
+proxy_pattern	Proxy Pattern	代理模式	computerese
+public_cloud	public cloud	公有云	computerese
+pull_up_constructor_body	Pull Up Constructor Body	构造函数本体上移1	computerese
+pull_up_field	Pull Up Field	字段上移1	computerese
+pull_up_method	Pull Up Method	函数上移1	computerese
+push	push	推送	computerese
+push_down_field	Push Down Field	字段下移1	computerese
+push_down_method	Push Down Method	函数下移1	computerese
+quality_assurance	quality assurance	质量保证（QA）	computerese
+queue	Queue	队列	computerese
+quota	Quota	配额	computerese
+rack	Rack	机架	computerese
+raii	RAII	资源获取即初始化	computerese
+rapid_application_development	Rapid Application Development	快速应用程序开发（RAD）	computerese
+rdbms	RDBMS	关系型数据库管理系统（Relational Database Management System）	computerese
+reactive_extensions	Reactive extensions	响应式扩展（Rx）4	computerese
+ready_status	Ready (status)	就绪（状态）	computerese
+real_time	real-time	即时、实时	computerese
+real_time_discussions	real-time discussions	即时讨论、实时讨论	computerese
+rebellious_hierarchy	Rebellious Hierarchy	叛逆性层次结构2	computerese
+recursion	recursion	递归	computerese
+redundancy	Redundancy	冗余	computerese
+redundant	Redundant	冗余（的）	computerese
+ref_return	Ref Return	应用返回	computerese
+ref_local	Ref Local	局部引用	computerese
+ref_property	Ref Property	引用属性	computerese
+ref_safe_to_escape	Ref-Safe-to-Escape	引用安全逃逸	computerese
+ref_safe_to_escape_scope	Ref-Safe-to-Escape scope	引用安全逃逸范围	computerese
+refactor	Refactor	重构	computerese
+region	region	地域	computerese
+reification	reification	具体化	computerese
+reinforcement_learning	Reinforcement Learning	强化学习	computerese
+reinforcement_learning_from_human_feedback	Reinforcement Learning from Human Feedback	基于人工反馈的强化学习（RLHF）	computerese
+relay	relay	中继	computerese
+relevancy	Relevancy	适切性	computerese
+reliability	Reliability	可靠性	computerese
+relying_party	Relying Party	依赖方	computerese
+remove_assignments_to_parameters	Remove Assignments to Parameters	移除对参数的赋值1	computerese
+remove_control_flag	Remove Control Flag	移除控制标记1	computerese
+remove_middle_man	Remove Middle Man	移除中间人1	computerese
+remove_parameter	Remove Parameter	移除参数1	computerese
+remove_setting_method	Remove Setting Method	移除配置函数1	computerese
+rename_method	Rename Method	函数改名1	computerese
+replace_array_with_object	Replace Array with Object	以对象取代数组1	computerese
+replace_conditional_with_polymorphism	Replace Conditional with Polymorphism	以多态取代条件表达式1	computerese
+replace_constructor_with_factory_method	Replace Constructor with Factory Method	以工厂函数取代构造函数1	computerese
+replace_data_value_with_object	Replace Data Value with Object	以对象取代数据值1	computerese
+replace_delegation_with_inheritance	Replace Delegation with Inheritance	以继承取代委托1	computerese
+replace_error_code_with_exception	Replace Error 　 Code with Exception	以异常取代错误码1	computerese
+replace_exception_with_test	Replace Exception with Test	以测试取代异常1	computerese
+replace_inheritance_with_delegation	Replace Inheritance with Delegation	以委托取代继承1	computerese
+replace_magic_number_with_symbolic_constant	Replace Magic Number with Symbolic Constant	以字面常量取代魔法数1	computerese
+replace_method_with_method_object	Replace Method with Method Object	以函数对象取代函数1	computerese
+replace_nested_conditional_with_guard_clauses	Replace Nested Conditional with Guard Clauses	以卫语句取代嵌套条件表达式1	computerese
+replace_parameter_with_explicit_methods	Replace Parameter with Explicit Methods	以明确函数取代参数1	computerese
+replace_parameter_with_methods	Replace Parameter with Methods	以函数取代参数1	computerese
+replace_record_with_data_class	Replace Record with Data Class	以数据类取代记录1	computerese
+replace_subclass_with_fields	Replace Subclass with Fields	以字段取代子类1	computerese
+replace_temp_with_query	Replace Temp with Query	以查询取代临时变量1	computerese
+replace_type_code_with_class	Replace Type Code with Class	以类取代类型码1	computerese
+replace_type_code_with_state_strategy	Replace Type Code with State/Strategy	以 State/Strategy 取代类型码1	computerese
+replace_type_code_with_subclass	Replace Type Code with Subclass	以子类取代类型码1	computerese
+reporting	reporting	报表	computerese
+repository	Repository	存储库	computerese
+representational_state_transfer	REpresentational State Transfer	表述性状态转移、表征性状态传输、具象状态传输（REST）	computerese
+request_pipeline	request pipeline	请求管道	computerese
+requirements_churn	Requirements Churn	需求波动	computerese
+reserved	reserved	专属	computerese
+resolution	resolution	解析	computerese
+resource_acquisition_is_initialization	Resource Acquisition Is Initialization	资源获取即初始化（RAII）	computerese
+resource_release_is_destruction	Resource Release Is Destruction	在构造时没有“获取”资源	computerese
+resource_oriented_architecture	Resource-Oriented Architecture	面向资源的架构(ROA)	computerese
+response_group	Response Group	响应群	computerese
+return_on_investment	Return on Investment	投资回报（ROI）	computerese
+reverse_proxy_module	reverse proxy module	反向代理模块	computerese
+retail	retail	零售版	computerese
+rich_client	Rich Client	丰富客户端	computerese
+ripple_effect	Ripple Effect	涟漪效应	computerese
+rlhf	RLHF	基于人工反馈的强化学习（Reinforcement Learning from Human Feedback）	computerese
+role	role	角色	computerese
+rolling_upgrade	Rolling Upgrade	滚动升级	computerese
+round_robin	round-robin	轮流（分配）	computerese
+round_tripping	round-tripping	还原	computerese
+router	router	路由器	computerese
+row	row	行	computerese
+rpc	RPC	远程过程调用（Remote Procedure Call）4	computerese
+rrid	RRID	在构造时没有“获取”资源	computerese
+saas	Saas	软件即服务（Software As A Service）	computerese
+safe_to_escape	Safe-to-Escape	安全逃逸	computerese
+safe_to_escape_scope	Safe-to-Escape scope	安全逃逸范围	computerese
+salted_password_hashing	salted password hashing	加盐密码哈希4	computerese
+san	SAN	存储区域网络（Storage Area Network）4	computerese
+sasl	SASL	简单认证与安全层	computerese
+scalability	Scalability	缩放性	computerese
+scalable_vector_graphic	Scalable Vector Graphic	可伸缩矢量图（SVG）	computerese
+scale	Scale	缩放	computerese
+scale_out	Scale Out	向外缩放	computerese
+scale_up	Scale Up	向上缩放	computerese
+scaling_pattern	scaling pattern	扩展模式4	computerese
+schema_database	Schema (database)	架构（数据）	computerese
+schema_xml	Schema (xml)	架构（xml）	computerese
+scrum_master	Scrum Master	主管（SM）	computerese
+sdk	SDK	软件开发工具箱（Software Development Kits）	computerese
+seam	seam	接缝：程序中的一些特殊的点	computerese
+search_engine	Search Engine	搜索引擎（SE）	computerese
+search_engine_marketing	Search Engine Marketing	搜索引擎营销（SEM）	computerese
+search_engine_optimization	Search Engine Optimization	搜索引擎优化（SEO）	computerese
+secondary_storage	secondary storage	二级存储	computerese
+secure_socket_layer	Secure Socket Layer	安全套接层（SSL）	computerese
+security	Security	安全（性）	computerese
+security_development_lifecycle	Security Development Lifecycle	安全开发生命周期4	computerese
+security_socket_layer	Security Socket Layer	安全套接层	computerese
+security_token	Security Token	安全令牌	computerese
+self_encapsulate_field	Self Encapsulate Field	自封装字段1	computerese
+self_hosted	self-hosted	自管理主机4	computerese
+self_signed_certificate	Self-signed Certificate	自签名证书	computerese
+semantic_kernel	Semantic Kernel	语义核心	computerese
+semantic_monitoring	semantic monitoring	语义监控4	computerese
+semantic_versioning	Semantic Versioning	语义化版本控制	computerese
+separate_domain_from_presentation	Separate Domain from Presentation	将领域和表述/显示分离1	computerese
+separate_query_from_modifier	Separate Query from Modifier	将查询函数和修改函数分离1	computerese
+serializable	Serializable	可序列化	computerese
+server_affinity	Server Affinity	服务器绑定	computerese
+server_driven_content_negotiation	Server Driven Content Negotiation	服务器驱动的内容协商	computerese
+server_side_render	Server Side Render	服务器渲染（SSR）	computerese
+service_bus	Service Bus	服务总线	computerese
+service_contract	Service Contract	服务合同	computerese
+service_level_agreement	Service Level Agreement	服务水平协议（SLA）	computerese
+service_provider	Service Provider	服务提供方	computerese
+session_jacking	session jacking	会话劫持	computerese
+setting	Setting	设置	computerese
+shared	Shared	共享	computerese
+shared_memory_data_structure	shared-memory data structure	共享内存数据结构	computerese
+short_circuit_evaluation	Short-circuit evaluation	短路求值	computerese
+sign_in	Sign in	登录	computerese
+sign_out	Sign out	注销	computerese
+signature	Signature	签名	computerese
+single_level_of_abstraction_principle	Single Level of Abstraction Principle	单一抽象层次原则（SLAP）	computerese
+single_responsibility_principle	Single responsibility principle	单一职责原则（SRP）	computerese
+single_page_application	Single Page Application	单页面应用（SPA）	computerese
+single_point_of_failure	single point of failure	单一故障点（SPOF）	computerese
+singleton_pattern	Singleton Pattern	单例模式	computerese
+site	Site	站点	computerese
+site_to_site	Site-to-Site	站点到站点	computerese
+skeleton_to_thought	Skeleton-to-Thought	思维框架（SoT）	computerese
+skip_list	skip list	跳跃表	computerese
+sla	SLA	服务水平协议、服务等级协议（Service Level Agreement）	computerese
+small	Small	小型	computerese
+smart_endpoint	smart endpoint	智能端点4	computerese
+snapshot	snapshot	快照	computerese
+soa	SOA	面向服务的架构（Service-Oriented Architecture）	computerese
+sot	SoT	思维框架（Skeleton-to-Thought）	computerese
+software_as_a_service	Software as a Service	软件即服务（Saas）	computerese
+source_lines_of_code	source lines of code	源代码行数（SLOC）	computerese
+speculative_hierarchy	Speculative Hierarchy	凭空想象的层次结构2	computerese
+split_temporary_variable	Split Temporary Variable	分解临时变量1	computerese
+sprint	sprint	冲刺（敏捷开发术语）	computerese
+sprint_backlog	sprint backlog	冲刺积压工作	computerese
+sql_database	SQL Database	数据库	computerese
+sskd	SSKD	少量你所知道的开发人员（Small Set of Known Developers）	computerese
+sso	SSO	单点登录（Single Sign-On）4	computerese
+stage	stage	阶段	computerese
+staging	Staging	过渡（环境）	computerese
+state_indeterminism	state indeterminism	状态不确定性	computerese
+state_based_testing	State-based testing	基于状态的测试	computerese
+state_pattern	State Pattern	状态模式	computerese
+stateless	Stateless	无状态	computerese
+sticky_session	Sticky Session	黏性会话	computerese
+stickyness	Stickyness	黏性	computerese
+story	story	故事（敏捷开发术语）	computerese
+storage	Storage	存储	computerese
+storage_account	Storage Account	存储账户	computerese
+strangler_application_pattern	Strangler Application Pattern	绞杀者模式4	computerese
+strategic_development_tools	strategic development tools	战略设计工具	computerese
+strategy_pattern	Strategy Pattern	策略模式	computerese
+stream	Stream	流	computerese
+structural_design_patterns	Structural Design Patterns	结构性设计模式	computerese
+structure	structure	结构	computerese
+structured_systems_analysis_and_design_methodology	Structured Systems Analysis and Design Methodology	结构化系统分析和设计方法（SSADM）	computerese
+subnet	Subnet	子网	computerese
+subordinate	Subordinate	附属	computerese
+sub_region	Sub-region	子地域	computerese
+subdomain	Subdomain	子领域	computerese
+subscription	Subscription	订阅	computerese
+substitute_algorithm	Substitute Algorithm	替换算法1	computerese
+sw	SW	的简写	computerese
+symbol_table	symbol table	符号表	computerese
+synchronized_multimedia_integration_language	Synchronized Multimedia Integration Language	同步多媒体集成语言（SMIL）	computerese
+syntactic_sugar	syntactic sugar	语法糖	computerese
+system_under_test	System Under Test	测试目标系统（SUT）	computerese
+table	Table	表	computerese
+tactical_development_tools	tactical development tools	战术实施工具	computerese
+tap	TAP,	基于任务的异步模式	computerese
+targeted_testing	targeted testing	目标测试	computerese
+task_based_asynchronous_pattern	Task-based Asynchronous Pattern	基于任务的异步模式	computerese
+tcp	TCP	传输控制协议（Transmission Control Protocol）	computerese
+tdd	TDD	测试驱动开发（Test-Driven Development）	computerese
+tease_apart_inheritance	Tease Apart Inheritance	梳理并分解继承体系1	computerese
+technical_bankruptcy	technical bankruptcy	技术破产	computerese
+technical_debt	Technical Debt	技术债务（TDBT）	computerese
+template_method_pattern	Template Method Pattern	模板方法模式	computerese
+tenant	Tenant	租户	computerese
+terminus	Terminus	端点	computerese
+test_doubles	test doubles	测试替身	computerese
+test_driven_development	Test-Driven Development	测试驱动开发（TDD）	computerese
+test_harness	test harness	测试用具	computerese
+the_normalization_of_deviance	the normalization of deviance	异常正常化4	computerese
+thin_client	Thin Client	瘦客户端	computerese
+thread	Thread	线程	computerese
+thread_environment_block	Thread Environment Block	线程环境块	computerese
+thread_kernel_object	Thread Kernel Object	线程内核对象	computerese
+thread_pool	Thread Pool	线程池	computerese
+thread_starvation	Thread Starvation	线程饥荒	computerese
+throttle	Throttle	节流	computerese
+timestamp	Timestamp	时间戳	computerese
+throughput	Throughput	吞吐量	computerese
+tnp	TNP	交通网络提供者（Transportation Network Providers）	computerese
+tofu	TOFU	首次使用时信任（Trust On First Use）	computerese
+topic	Topic	主题	computerese
+topology	Topology	拓扑结构	computerese
+token	Token	令牌	computerese
+top_level_statements	Top-level statements	顶级语句	computerese
+tot	ToT	思维树（Tree-of-Thought）	computerese
+tpl	TPL	任务并行库	computerese
+code_tracing	(Code) Tracing	代码）追踪	computerese
+transaction	Transaction	事务	computerese
+transaction_script	Transaction Script	事务脚本	computerese
+transient_error	Transient Error	瞬时错误	computerese
+transparent_data_encryption	Transparent Data Encryption	透明数据加密4	computerese
+transportation_network_providers	Transportation Network Providers	交通网络提供者（TNP）	computerese
+tree_of_thought	Tree-of-Thought	思维树（ToT） 6 是一种通过将复杂问题分解为更易于解决的小问题	computerese
+type_bloat	Type Bloat	类型膨胀	computerese
+uat	UAT	用户验收测试（User Acceptance Testing）4	computerese
+ubiquitous_computing	Ubiquitous Computing	普存计算	computerese
+ubiquitous_language	Ubiquitous Language	统一语言	computerese
+uddi	UDDI	通用描述、发现与集成服务（Universal Description	computerese
+ui	UI	用户界面	computerese
+uncommitted	Uncommitted	未提交（的）	computerese
+update_domain	Update Domain	更新域	computerese
+unbox	unbox	拆箱	computerese
+under_post	under-post	提交不足	computerese
+undirected_graph	undirected graph	无向图	computerese
+unexploited_encapsulation	Unexploited Encapsulation	未利用封装2	computerese
+unfactored_hierarchy	Unfactored Hierarchy	未归并的层次结构2	computerese
+unified_modeling_language	Unified Modeling Language	统一建模语言（UML）	computerese
+uniform_interface	Uniform Interface	统一接口	computerese
+uniform_resource_locator	Uniform Resource Locator	统一资源定位符（URL）	computerese
+unit_of_work	unit of work	工作单元	computerese
+unit_test	Unit test	单元测试	computerese
+unit_test_coverage	unit test coverage	单元测试覆盖率	computerese
+unit_testing_harnesses	unit-testing harnesses	单元测试用例	computerese
+unmanaged_code	unmanaged code	非托管代码	computerese
+unmanaged_pointers	Unmanaged Pointers	非托管指针	computerese
+unnecessary_abstract	Unnecessary Abstract	不必要的抽象2	computerese
+unnecessary_hierarchy	Unnecessary Hierarchy	不必要的层次结构2	computerese
+unnecessary_overhead	unnecessary overhead	不必要的开销	computerese
+unutilized_abstraction	Unutilized Abstraction	未用的抽象2	computerese
+usability_review	Usability Review	可用性评估	computerese
+user_acceptance_test	User Acceptance Test	接受度测试（UAT）	computerese
+user_analysis	User Analysis	用户分析	computerese
+user_datagram_protocol	User Datagram Protocol	用户数据报协议（UDP）	computerese
+user_interface	User Interface	用户界面	computerese
+user_mode_stack	User Mode Stack	用户模式栈	computerese
+value_object	Value Object	值对象	computerese
+variant	variant	变体	computerese
+variation_encapsulation_principle	Variation Encapsulation Principle	变化封装原则（VEP）	computerese
+versionable_interaction_contract	versionable interaction contract	可以进行版本控制的交互契约	computerese
+vertical_scale	Vertical Scale	垂直缩放	computerese
+ves	VES	虚拟执行系统（Visual Execution System）	computerese
+viscosity	viscosity	粘滞性	computerese
+vip	VIP	虚拟 IP（或不译）	computerese
+vip_swap	VIP Swap	交换	computerese
+virtual_execution_system	Virtual Execution System	虚拟执行系统（VES）	computerese
+virtual_network	Virtual Network	虚拟网络	computerese
+virtual_machine	Virtual Machine	虚拟机	computerese
+virtual_private_network	Virtual Private Network	虚拟专用网络（VPN）	computerese
+virtual_reality	Virtual Reality	虚拟现实（VR）	computerese
+visitor_pattern	Visitor Pattern	访问者模式	computerese
+vlo	VLO	团体批量许可证	computerese
+vol	VOL	团体批量许可证	computerese
+volume_licensing_for_organizations	Volume Licensing for Organizations	团体批量许可证	computerese
+vpc	VPC	虚拟私有云（Virtual Private Cloud）4	computerese
+vpn	VPN	虚拟专用网络（Virtual Private Network）	computerese
+wcf	WCF	通讯开发平台（Windows Comminication Foundation）	computerese
+weak_generational_hypothesis	Weak Generational Hypothesis	弱分代假设	computerese
+wearable_device	Wearable Device	可穿戴设备	computerese
+web_role	Web Role	网站角色	computerese
+web_scraping	Web Scraping	网络爬虫	computerese
+web_service	Web Service	网络服务	computerese
+web_service_definition_language	Web Service Definition Language	服务定义语言（WSDL）	computerese
+web_sites	Web Sites	网站	computerese
+weighted_method_per_class	Weighted Method per Class	类累计圈复杂度（WMC）	computerese
+wf	WF	工作流（WIndows Workflow）	computerese
+wide_hierarchy	Wide Hierarchy	过宽的层次结构2	computerese
+windows_comminication_foundation	Windows Comminication Foundation	分布式通信（WCF）	computerese
+windows_internet_name_service	Windows Internet Name Service	命名服务（WINS）	computerese
+windows_management_instrumentation	Windows Management Instrumentation	管理规范（WMI）	computerese
+windows_presentation_foundation	Windows Presentation Foundation	富客户端表示（WPF）	computerese
+windows_workflow	Windows Workflow	工作流（WF）	computerese
+wins	WINS	命名服务（Windows Internet Name Service）	computerese
+wins_proxy	WINS Proxy	代理	computerese
+wins_resource	WINS Resource	资源	computerese
+wireless_communication	wireless communication	无线通讯	computerese
+wmi	WMI	管理规范（Windows Management Instrumentation）	computerese
+worker_role	Worker Role	辅助角色	computerese
+workflow	Workflow	工作流	computerese
+workgroup	workgroup	工作组	computerese
+world_wide_web_consortium	World Wide Web Consortium	万维网联盟（W3C）	computerese
+wpf	WPF	富客户端表示（Windows Presentation Foundation）	computerese
+writebehind	writebehind	后写式	computerese
+x_509v3_certificate	X.509v3 certificate	证书	computerese
+xaas	XaaS	一切皆服务	computerese
+xml	XML	可扩展标记语言（Extensible Markup Language）	computerese
+xor	XOR	异或（Exclusive OR）	computerese
+xul	XUL	用户界面语言（XML User Interface Language）	computerese
+yagni	YAGNI	原则	computerese
+zero_downtime_upgrade	Zero-downtime Upgrade	零停机升级	computerese
+zip_disk	zip disk	压缩磁盘	computerese
+zone	zone	区域	computerese
+zone_list	zone list	区域列表	computerese
+zone_transfer	zone transfer	区域传送	computerese

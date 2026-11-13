@@ -1,0 +1,10 @@
+cjk.tsv is derived from:
+
+  https://github.com/dahlia/cjk-compsci-terms
+  tables/*.yaml (zh-CN column)
+
+Creative Commons Attribution-ShareAlike 4.0 International (CC-BY-SA-4.0)
+https://creativecommons.org/licenses/by-sa/4.0/
+
+Attribution: Hong Minhee and contributors of cjk-compsci-terms.
+ShareAlike: if you remix this table, keep it under CC-BY-SA-4.0.

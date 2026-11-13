@@ -1,0 +1,46 @@
+slug	en	zh	note
+agent	agent	智能体	开源表作「代理」；本仓库对话里指能选工具的程序
+cli	CLI	命令行界面	computerese 把 CLI 写成「公共语言基础结构」；这里按命令行界面
+image	image	镜像	computerese 作「映像」；容器/文件场景用「镜像」
+loop	loop	循环	computerese 作「自循环」
+repository	repository	仓库	cjk 用「仓库」，computerese 用「存储库」；这里跟 cjk
+application_programming_interface	Application Programming Interface	应用程序编程接口	computerese 已有此条
+api	API	应用程序编程接口	缩写指向同一中文
+cache	cache	缓存	computerese 写作 Cache/Caching
+pull_request	pull request	拉取请求	开源表无独立条
+skill	skill	技能	开源表无此条
+prompt	prompt	提示词	开源表无此条
+worktree	worktree	工作树	开源表无此条
+rebase	rebase	变基	开源表无此条
+fetch	fetch	抓取	开源表无此条
+mcp	MCP	模型上下文协议	开源表无此条
+rag	RAG	检索增强生成	开源表无此条
+sqlite	SQLite	SQLite	开源表无此条；不另造中文
+sandbox	sandbox	沙箱	开源表无此条
+embedding	embedding	嵌入	开源表无此条
+orchestrator	orchestrator	编排器	开源表无此条
+upstream	upstream	上游	开源表无此条
+diff	diff	差异	开源表无此条
+git	Git	Git	专名不译
+source_code	source code	源代码	juanito 有，未进 MIT 表
+compiler	compiler	编译器	juanito 有，未进 MIT 表
+variable	variable	变量	juanito 有，未进 MIT 表
+function	function	函数	juanito 有，未进 MIT 表
+exception	exception	异常	juanito 有，未进 MIT 表
+interface	interface	接口	juanito 有，未进 MIT 表
+database	database	数据库	juanito 有，未进 MIT 表
+class	class	类	juanito 有，未进 MIT 表
+latency	latency	延迟	juanito 有，未进 MIT 表
+concurrency	concurrency	并发	cjk 有相关条
+garbage_collection	garbage collection	垃圾回收	computerese 作「垃圾回收器」
+commit	commit	提交	cjk
+branch	branch	分支	cjk
+merge	merge	合并	cjk 与 computerese 一致
+thread	thread	线程	computerese
+process	process	进程	computerese
+protocol	protocol	协议	computerese
+middleware	middleware	中间件	computerese
+algorithm	algorithm	算法	computerese
+token	token	令牌	computerese
+hook	hook	钩子	computerese
+recursion	recursion	递归	computerese

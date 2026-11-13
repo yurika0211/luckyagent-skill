@@ -44,6 +44,7 @@ Source: [openai/skills](https://github.com/openai/skills) curated set. Requires 
 - [`obsidian-bases`](./obsidian/obsidian-bases) — Obsidian Bases (`.base`)
 - [`find-docs`](./knowledge/find-docs) — Current library/framework docs before coding
 - [`defuddle`](./knowledge/defuddle) — Clean URL → Markdown extraction
+- [`plain-speak`](./knowledge/plain-speak) — Plain Chinese, locked glossary translations, explain new terms from local SQLite frequency
 
 ### Review
 - [`review-agent`](./review/review-agent) — Read-only, defect-first review of a code change

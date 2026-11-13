@@ -1,0 +1,235 @@
+slug	en	zh	source
+artificial_intelligence	artificial intelligence	人工智能	cjk:ai-ml
+machine_learning	machine learning	机器学习	cjk:ai-ml
+deep_learning	deep learning	深度学习	cjk:ai-ml
+neural_network	neural network	神经网络	cjk:ai-ml
+training	training	训练	cjk:ai-ml
+inference	inference	推理	cjk:ai-ml
+model	model	模型	cjk:ai-ml
+dataset	dataset	数据集	cjk:ai-ml
+overfitting	overfitting	过拟合	cjk:ai-ml
+supervised_learning	supervised learning	监督学习	cjk:ai-ml
+algorithm	algorithm	算法	cjk:algorithms
+sorting	sorting	排序	cjk:algorithms
+searching	searching	搜索	cjk:algorithms
+recursion	recursion	递归	cjk:algorithms
+dynamic_programming	dynamic programming	动态规划	cjk:algorithms
+greedy_algorithm	greedy algorithm	贪婪算法	cjk:algorithms
+divide_and_conquer	divide and conquer	分治	cjk:algorithms
+time_complexity	time complexity	时间复杂度	cjk:algorithms
+space_complexity	space complexity	空间复杂度	cjk:algorithms
+iteration	iteration	迭代	cjk:algorithms
+instruction_set	instruction set	指令集	cjk:architecture
+pipeline	pipeline	流水线	cjk:architecture
+register	register	寄存器	cjk:architecture
+interrupt	interrupt	中断	cjk:architecture
+clock	clock	时钟	cjk:architecture
+memory_hierarchy	memory hierarchy	内存层次	cjk:architecture
+word	word	字	cjk:architecture
+audio	audio	音频	cjk:audio
+sampling	sampling	采样	cjk:audio
+codec	codec	编解码器	cjk:audio
+bitrate	bitrate	比特率	cjk:audio
+frequency	frequency	频率	cjk:audio
+amplitude	amplitude	振幅	cjk:audio
+waveform	waveform	波形	cjk:audio
+streaming	streaming	流媒体	cjk:audio
+compression	compression	压缩	cjk:audio
+channel	channel	声道	cjk:audio
+computer	computer	计算机	cjk:basic
+smartphone	smartphone	智能手机	cjk:basic
+software	software	软件	cjk:basic
+hardware	hardware	硬件	cjk:basic
+information	information	信息	cjk:basic
+data	data	数据	cjk:basic
+network	network	网络	cjk:basic
+application	application	应用程序	cjk:basic
+concurrency	concurrency	并发性	cjk:concurrency
+concurrent_programming	concurrent programming	并发编程	cjk:concurrency
+synchronization	synchronization	同步	cjk:concurrency
+multiprocessing	multiprocessing	多進程	cjk:concurrency
+thread	thread	线程	cjk:concurrency
+lock	lock	锁	cjk:concurrency
+monitor	monitor	管程	cjk:concurrency
+transactional_memory	transactional memory	事务内存	cjk:concurrency
+parallel_computing	parallel computing	并行计算	cjk:concurrency
+asynchronous_programming	asynchronous programming	异步编程	cjk:concurrency
+synchronous_programming	synchronous programming	同步编程	cjk:concurrency
+multi_core	multi-core	多核心	cjk:concurrency
+deadlock	deadlock	死锁	cjk:concurrency
+race_condition	race condition	竞态条件	cjk:concurrency
+semaphore	semaphore	信号量	cjk:concurrency
+coroutine	coroutine	协程	cjk:concurrency
+array	array	数组	cjk:data-structures
+linked_list	linked list	链表	cjk:data-structures
+stack	stack	栈	cjk:data-structures
+queue	queue	队列	cjk:data-structures
+tree	tree	树	cjk:data-structures
+graph	graph	图	cjk:data-structures
+hash_table	hash table	哈希表	cjk:data-structures
+heap	heap	堆	cjk:data-structures
+set	set	集合	cjk:data-structures
+node	node	节点	cjk:data-structures
+database	database	数据库	cjk:database
+table	table	表	cjk:database
+record	record	记录	cjk:database
+field	field	字段	cjk:database
+schema	schema	模式	cjk:database
+query	query	查询	cjk:database
+transaction	transaction	事务	cjk:database
+index	index	索引	cjk:database
+primary_key	primary key	主键	cjk:database
+foreign_key	foreign key	外键	cjk:database
+design_pattern	design pattern	设计模式	cjk:design-patterns
+singleton	singleton	单例	cjk:design-patterns
+factory	factory	工厂	cjk:design-patterns
+observer	observer	观察者	cjk:design-patterns
+adapter	adapter	适配器	cjk:design-patterns
+decorator	decorator	装饰器	cjk:design-patterns
+strategy	strategy	策略	cjk:design-patterns
+dependency_injection	dependency injection	依赖注入	cjk:design-patterns
+interface	interface	接口	cjk:design-patterns
+free_software	free software	自由软件	cjk:foss
+open_source_software	open source software	开放源代码软件	cjk:foss
+software_license	software license	软件许可证	cjk:foss
+copyleft	copyleft	反版权	cjk:foss
+game_engine	game engine	游戏引擎	cjk:game-dev
+physics_engine	physics engine	物理引擎	cjk:game-dev
+collision_detection	collision detection	碰撞检测	cjk:game-dev
+sprite	sprite	精灵	cjk:game-dev
+frame_rate	frame rate	帧率	cjk:game-dev
+hitbox	hitbox	判定框	cjk:game-dev
+animation	animation	动画	cjk:game-dev
+level	level	关卡	cjk:game-dev
+rendering	rendering	渲染	cjk:graphics
+shader	shader	着色器	cjk:graphics
+texture	texture	纹理	cjk:graphics
+pixel	pixel	像素	cjk:graphics
+vertex	vertex	顶点	cjk:graphics
+polygon	polygon	多边形	cjk:graphics
+rasterization	rasterization	光栅化	cjk:graphics
+ray_tracing	ray tracing	光线追踪	cjk:graphics
+frame_buffer	frame buffer	帧缓冲	cjk:graphics
+ram	RAM	内存	cjk:hardware
+cache	cache	缓存	cjk:hardware
+ssd	SSD	固态硬盘	cjk:hardware
+hdd	HDD	硬盘	cjk:hardware
+motherboard	motherboard	主板	cjk:hardware
+bus	bus	总线	cjk:hardware
+peripheral	peripheral	外设	cjk:hardware
+chip	chip	芯片	cjk:hardware
+firmware	firmware	固件	cjk:mobile
+touch_screen	touch screen	触摸屏	cjk:mobile
+sensor	sensor	传感器	cjk:mobile
+notification	notification	通知	cjk:mobile
+widget	widget	小组件	cjk:mobile
+accelerometer	accelerometer	加速度计	cjk:mobile
+gyroscope	gyroscope	陀螺仪	cjk:mobile
+protocol	protocol	协议	cjk:networking
+packet	packet	数据包	cjk:networking
+router	router	路由器	cjk:networking
+firewall	firewall	防火墙	cjk:networking
+bandwidth	bandwidth	带宽	cjk:networking
+latency	latency	延迟	cjk:networking
+ip_address	IP address	IP地址	cjk:networking
+server	server	服务器	cjk:networking
+client	client	客户端	cjk:networking
+operating_system	operating system	操作系统	cjk:os
+kernel	kernel	内核	cjk:os
+microkernel	microkernel	微内核	cjk:os
+monolithic_kernel	monolithic kernel	宏内核	cjk:os
+unikernel	unikernel	单内核	cjk:os
+scheduler	scheduler	调度器	cjk:os
+device_driver	device driver	设备驱动程序	cjk:os
+multitasking	multitasking	多任务处理	cjk:os
+process	process	进程	cjk:os
+file_system	file system	文件系统	cjk:os
+virtual_memory	virtual memory	虚拟内存	cjk:os
+imperative_programming	imperative programming	指令式编程	cjk:paradigms
+procedural_programming	procedural programming	过程式程序设计	cjk:paradigms
+object_oriented_programming	object-oriented programming	面向对象程序设计	cjk:paradigms
+declarative_programming	declarative programming	声明式编程	cjk:paradigms
+functional_programming	functional programming	函数式编程	cjk:paradigms
+logic_programming	logic programming	逻辑编程	cjk:paradigms
+computer_programming	computer programming	计算机编程	cjk:programming
+bug	bug	漏洞	cjk:programming
+debug	debug	调试	cjk:programming
+source_code	source code	源代码	cjk:programming
+flowchart	flowchart	流程图	cjk:programming
+value	value	变量	cjk:programming
+function	function	函数	cjk:programming
+return_value	return value	返回値	cjk:programming
+conditional_statement	conditional statement	条件陈述	cjk:programming
+infinite_loop	infinite loop	死循环	cjk:programming
+encryption	encryption	加密	cjk:security
+decryption	decryption	解密	cjk:security
+hash	hash	散列	cjk:security
+authentication	authentication	认证	cjk:security
+authorization	authorization	授权	cjk:security
+password	password	密码	cjk:security
+vulnerability	vulnerability	漏洞	cjk:security
+certificate	certificate	证书	cjk:security
+cipher	cipher	密码	cjk:security
+public_key	public key	公钥	cjk:security
+private_key	private key	私钥	cjk:security
+refactoring	refactoring	重构	cjk:software-eng
+debugging	debugging	调试	cjk:software-eng
+unit_test	unit test	单元测试	cjk:software-eng
+integration_test	integration test	集成测试	cjk:software-eng
+deployment	deployment	部署	cjk:software-eng
+code_review	code review	代码审查	cjk:software-eng
+documentation	documentation	文档	cjk:software-eng
+maintenance	maintenance	维护	cjk:software-eng
+agile	agile	敏捷	cjk:software-eng
+sprint	sprint	冲刺	cjk:software-eng
+computer_science	computer science	计算机科学	cjk:studies
+computational_science	computational science	计算科学	cjk:studies
+theory_of_computation	theory of computation	计算理论	cjk:studies
+computer_engineering	computer engineering	计算机工程	cjk:studies
+software_engineering	software engineering	软件工程	cjk:studies
+computer_security	computer security	计算机安全	cjk:studies
+cryptography	cryptography	密码学	cjk:studies
+turing_completeness	Turing completeness	图灵完备性	cjk:theory-comp
+decision_problem	decision problem	决定性问题	cjk:theory-comp
+editor	editor	编辑器	cjk:tools
+compiler	compiler	编译器	cjk:tools
+decompiler	decompiler	反编译器	cjk:tools
+transpiler	transpiler	转译器	cjk:tools
+debugger	debugger	调试工具	cjk:tools
+integrated_development_environment	integrated development environment	集成开发环境	cjk:tools
+font	font	字体	cjk:typography
+typeface	typeface	字体	cjk:typography
+glyph	glyph	字形	cjk:typography
+serif	serif	宋体	cjk:typography
+sans_serif	sans-serif	黑体	cjk:typography
+kerning	kerning	字距	cjk:typography
+leading	leading	行距	cjk:typography
+unicode	Unicode	统一码	cjk:typography
+encoding	encoding	编码	cjk:typography
+character_set	character set	字符集	cjk:typography
+user_interface	user interface	用户界面	cjk:ui-ux
+button	button	按钮	cjk:ui-ux
+dialog	dialog	对话框	cjk:ui-ux
+menu	menu	菜单	cjk:ui-ux
+icon	icon	图标	cjk:ui-ux
+cursor	cursor	光标	cjk:ui-ux
+checkbox	checkbox	复选框	cjk:ui-ux
+dropdown	dropdown	下拉	cjk:ui-ux
+tooltip	tooltip	工具提示	cjk:ui-ux
+bit	bit	比特	cjk:units
+byte	byte	字节	cjk:units
+octet	octet	八字节	cjk:units
+version_control	version control	版本控制	cjk:version-control
+repository	repository	仓库	cjk:version-control
+commit	commit	提交	cjk:version-control
+branch	branch	分支	cjk:version-control
+merge	merge	合并	cjk:version-control
+conflict	conflict	冲突	cjk:version-control
+clone	clone	克隆	cjk:version-control
+push	push	推送	cjk:version-control
+pull	pull	拉取	cjk:version-control
+diff	diff	差异	cjk:version-control
+browser	browser	浏览器	cjk:web
+session	session	会话	cjk:web
+frontend	frontend	前端	cjk:web
+backend	backend	后端	cjk:web
