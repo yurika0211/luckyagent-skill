@@ -34,6 +34,18 @@ python3 SKILL_DIR/scripts/glossary.py lookup --all
 python3 SKILL_DIR/scripts/glossary.py bump --slugs cache,thread
 ```
 
+Claude Code 钩子（`~/.claude/settings.json`）会自动做这两步：`UserPromptSubmit` 把本轮命中的词表塞进上下文，模型动笔前就能看到；`Stop` 用对话记录给本轮用过的词 +1。手动跑：
+
+```bash
+echo '{"hook_event_name":"UserPromptSubmit","prompt":"解释一下 RAG"}' | python3 SKILL_DIR/scripts/glossary.py hook
+```
+
+LuckyAgent 没有 `UserPromptSubmit`。`~/.luckyagent/hooks/plain_speak.py` 挂在 `PostToolUse`：本轮第一次工具返回时，把用户消息命中的词表追加到工具结果里，模型写最终回答前能看到；同一轮词频只 +1 一次。没有工具调用的短回复钩子不会跑。
+
+```bash
+echo '{"event":"PostToolUse","tool":"skill_read","session_id":"SID","output":"ok"}' | python3 SKILL_DIR/scripts/glossary.py hook
+```
+
 ## 句子
 
 每句要有人、动作、对象。禁止无主语句、禁止一串名词堆砌。

@@ -13,6 +13,7 @@ import json
 import os
 import re
 import sqlite3
+import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -343,17 +344,12 @@ def cmd_lookup(args: argparse.Namespace) -> None:
         )
 
 
-def cmd_bump(args: argparse.Namespace) -> None:
-    slugs = [s.strip() for s in (args.slugs or "").split(",") if s.strip()]
-    if not slugs:
-        raise SystemExit("bump needs --slugs")
+def bump_slugs(con: sqlite3.Connection, slugs: list[str]) -> list[str]:
     now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-    con = connect()
     kept = []
     for slug in slugs:
         exists = con.execute("SELECT 1 FROM terms WHERE slug=?", (slug,)).fetchone()
         if not exists:
-            print(f"skip unknown slug={slug}")
             continue
         con.execute(
             "INSERT INTO term_freq(slug, seen_count, session_count, first_seen, last_seen, source) "
@@ -366,6 +362,19 @@ def cmd_bump(args: argparse.Namespace) -> None:
         )
         kept.append(slug)
     con.commit()
+    return kept
+
+
+def cmd_bump(args: argparse.Namespace) -> None:
+    slugs = [s.strip() for s in (args.slugs or "").split(",") if s.strip()]
+    if not slugs:
+        raise SystemExit("bump needs --slugs")
+    con = connect()
+    known = {r["slug"] for r in con.execute("SELECT slug FROM terms")}
+    for slug in slugs:
+        if slug not in known:
+            print(f"skip unknown slug={slug}")
+    kept = bump_slugs(con, [s for s in slugs if s in known])
     print("bumped", ",".join(kept))
 
 
@@ -581,6 +590,357 @@ def cmd_stats(_: argparse.Namespace) -> None:
         print(f"  {r['seen_count']:5}  {r['zh']} ({r['slug']})")
 
 
+HOOK_MAX_TERMS = 40
+HOOK_MAX_CHARS = 6000
+
+
+def read_stdin_json() -> dict:
+    raw = sys.stdin.read()
+    if not raw.strip():
+        return {}
+    try:
+        data = json.loads(raw)
+    except json.JSONDecodeError:
+        return {}
+    return data if isinstance(data, dict) else {}
+
+
+def extract_prompt_text(data: dict) -> str:
+    for key in ("prompt", "user_prompt"):
+        v = data.get(key)
+        if isinstance(v, str) and v.strip():
+            return v
+    return ""
+
+
+TRANSCRIPT_TAIL = 2_000_000
+
+
+def transcript_texts(path: str) -> tuple[str, str]:
+    """Last user text and last assistant text in a Claude jsonl transcript."""
+    last_user = ""
+    last_asst = ""
+    try:
+        size = os.path.getsize(path)
+        with open(path, encoding="utf-8") as fh:
+            if size > TRANSCRIPT_TAIL:
+                fh.seek(size - TRANSCRIPT_TAIL)
+                fh.readline()
+            for line in fh:
+                try:
+                    o = json.loads(line)
+                except json.JSONDecodeError:
+                    continue
+                msg = o.get("message") or {}
+                if not isinstance(msg, dict):
+                    continue
+                role = msg.get("role") or o.get("type")
+                c = msg.get("content")
+                texts = []
+                if isinstance(c, str):
+                    texts = [c]
+                elif isinstance(c, list):
+                    texts = [
+                        t.get("text") or ""
+                        for t in c
+                        if isinstance(t, dict) and t.get("type") == "text"
+                    ]
+                body = "\n".join(texts).strip()
+                if not body:
+                    continue
+                if role == "user" or o.get("type") == "user":
+                    if body.startswith(SKIP_USER) or "command-name" in body[:80]:
+                        continue
+                    last_user = body
+                elif role == "assistant" or o.get("type") == "assistant":
+                    last_asst = body
+    except OSError:
+        pass
+    return last_user, last_asst
+
+
+def lookup_hits(con: sqlite3.Connection, slugs: set[str]) -> list[sqlite3.Row]:
+    if not slugs:
+        return []
+    q = ",".join("?" * len(slugs))
+    return con.execute(
+        "SELECT t.slug, t.en, t.zh, t.source, t.one_liner, "
+        "COALESCE(f.seen_count, 0) AS seen_count "
+        "FROM terms t LEFT JOIN term_freq f ON t.slug = f.slug "
+        f"WHERE t.slug IN ({q}) ORDER BY seen_count ASC, t.slug",
+        tuple(slugs),
+    ).fetchall()
+
+
+def format_plain_speak_context(rows: list, threshold: int) -> str:
+    lines = [
+        "plain-speak：回复用完整主谓宾句子。术语只用下表中文，禁止另造译名。词表没有的词只写英文。",
+        "first = 第一次：中文（English）+ 一句人话。explain = 中文（English）。bare = 只写中文，不加括号。",
+        "slug\tband\tseen\tzh\ten\tnote",
+    ]
+    for i, r in enumerate(rows):
+        if i >= HOOK_MAX_TERMS:
+            lines.append(f"# truncated after {HOOK_MAX_TERMS} terms")
+            break
+        band = band_of(int(r["seen_count"]), threshold, r["slug"], r["en"])
+        note = (r["one_liner"] or "").replace("\t", " ").replace("\n", " ")
+        lines.append(
+            f"{r['slug']}\t{band}\t{int(r['seen_count'])}\t{r['zh']}\t{r['en']}\t{note}"
+        )
+    text = "\n".join(lines)
+    if len(text) > HOOK_MAX_CHARS:
+        text = text[:HOOK_MAX_CHARS] + "\n# truncated"
+    return text
+
+
+def emit_hook(event: str, additional_context: str | None = None) -> None:
+    out: dict = {"continue": True, "suppressOutput": True}
+    if additional_context:
+        out["hookSpecificOutput"] = {
+            "hookEventName": event,
+            "additionalContext": additional_context,
+        }
+    json.dump(out, sys.stdout, ensure_ascii=False)
+    sys.stdout.write("\n")
+
+
+def emit_lucky(decision: str, modified_output: str | None = None) -> None:
+    out: dict = {"decision": decision}
+    if modified_output is not None:
+        out["modified_output"] = modified_output
+    json.dump(out, sys.stdout, ensure_ascii=False)
+    sys.stdout.write("\n")
+
+
+DELIVERY_MARKERS = (
+    "\n\n[Telegram delivery rule]",
+    "\n[Telegram delivery rule]",
+    "\n\n[QQ delivery rule]",
+    "\n[QQ delivery rule]",
+)
+
+PLAIN_SPEAK_MARKER = "[plain-speak]"
+
+
+def strip_gateway_suffix(body: str) -> str:
+    for marker in DELIVERY_MARKERS:
+        idx = body.find(marker)
+        if idx != -1:
+            body = body[:idx]
+    return body.strip()
+
+
+def content_to_text(content) -> str:
+    if isinstance(content, str):
+        return content
+    if isinstance(content, list):
+        parts = []
+        for item in content:
+            if isinstance(item, str):
+                parts.append(item)
+            elif isinstance(item, dict):
+                parts.append(str(item.get("text") or item.get("content") or ""))
+        return "\n".join(parts)
+    return ""
+
+
+def sessions_root() -> Path:
+    override = os.environ.get("PLAIN_SPEAK_SESSION_ROOT")
+    if override:
+        return Path(override)
+    return Path.home() / ".luckyagent" / "sessions"
+
+
+def lucky_state_path() -> Path:
+    override = os.environ.get("PLAIN_SPEAK_HOOK_STATE")
+    if override:
+        return Path(override)
+    return Path.home() / ".luckyagent" / "plain-speak" / "hook-state.json"
+
+
+def load_lucky_state() -> dict:
+    path = lucky_state_path()
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+        return data if isinstance(data, dict) else {}
+    except (OSError, json.JSONDecodeError):
+        return {}
+
+
+def save_lucky_state(state: dict) -> None:
+    path = lucky_state_path()
+    try:
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(json.dumps(state, ensure_ascii=False), encoding="utf-8")
+    except OSError:
+        pass
+
+
+def turn_key(session_id: str, last_user: str) -> str:
+    digest = __import__("hashlib").sha256(last_user.encode("utf-8", "replace")).hexdigest()[:16]
+    return f"{session_id}:{digest}"
+
+
+def lucky_session_texts(session_id: str) -> tuple[str, str]:
+    """Last user text and last assistant text in a LuckyAgent session."""
+    if not session_id or "/" in session_id or "\\" in session_id or session_id in (".", ".."):
+        return "", ""
+    root = sessions_root()
+    jsonl = root / session_id / "messages.jsonl"
+    md_path = root / f"{session_id}.md"
+    last_user = ""
+    last_asst = ""
+    try:
+        if jsonl.is_file():
+            size = os.path.getsize(jsonl)
+            with open(jsonl, encoding="utf-8") as fh:
+                if size > TRANSCRIPT_TAIL:
+                    fh.seek(size - TRANSCRIPT_TAIL)
+                    fh.readline()
+                for line in fh:
+                    try:
+                        obj = json.loads(line)
+                    except json.JSONDecodeError:
+                        continue
+                    if not isinstance(obj, dict):
+                        continue
+                    body = strip_gateway_suffix(content_to_text(obj.get("content")))
+                    if not body:
+                        continue
+                    role = obj.get("role") or ""
+                    if role == "user":
+                        if body.startswith(SKIP_USER) or "command-name" in body[:80]:
+                            continue
+                        last_user = body
+                    elif role == "assistant":
+                        last_asst = body
+        elif md_path.is_file():
+            text = md_path.read_text(encoding="utf-8")
+            start = text.find("```json")
+            end = text.find("```", start + 7) if start != -1 else -1
+            if start != -1 and end != -1:
+                blob = json.loads(text[start + 7 : end])
+                for obj in blob.get("messages") or []:
+                    if not isinstance(obj, dict):
+                        continue
+                    body = strip_gateway_suffix(content_to_text(obj.get("content")))
+                    if not body:
+                        continue
+                    role = obj.get("role") or ""
+                    if role == "user":
+                        last_user = body
+                    elif role == "assistant":
+                        last_asst = body
+    except (OSError, json.JSONDecodeError, TypeError, ValueError):
+        return last_user, last_asst
+    return last_user, last_asst
+
+
+def lucky_tool_hook(data: dict) -> None:
+    """LuckyAgent Pre/PostToolUse. Never block. Inject on first PostToolUse of a turn."""
+    event = str(data.get("event") or "")
+    if event != "PostToolUse":
+        emit_lucky("allow")
+        return
+    output = data.get("output")
+    if not isinstance(output, str):
+        output = "" if output is None else str(output)
+    session_id = str(data.get("session_id") or "")
+    last_user, _last_asst = lucky_session_texts(session_id) if session_id else ("", "")
+    if not last_user:
+        emit_lucky("allow")
+        return
+    con = ensure_terms(connect())
+    word_map, needles = load_alias_index(con)
+    slugs = slugs_in_text(last_user, word_map, needles)
+    key = turn_key(session_id, last_user)
+    state = load_lucky_state()
+    modified = output
+    if slugs and PLAIN_SPEAK_MARKER not in output and state.get("injected") != key:
+        rows = lookup_hits(con, slugs)
+        if rows:
+            modified = output + "\n\n" + PLAIN_SPEAK_MARKER + "\n" + format_plain_speak_context(rows, EXPLAIN_BELOW)
+            state["injected"] = key
+    if slugs and state.get("bumped") != key:
+        bump_slugs(con, sorted(slugs))
+        state["bumped"] = key
+    if state.get("injected") == key or state.get("bumped") == key:
+        state["session_id"] = session_id
+        save_lucky_state(state)
+    if modified != output:
+        emit_lucky("modify", modified)
+    else:
+        emit_lucky("allow")
+
+
+def ensure_terms(con: sqlite3.Connection) -> sqlite3.Connection:
+    n = con.execute("SELECT COUNT(*) FROM terms").fetchone()[0]
+    if n:
+        return con
+    old = sys.stdout
+    sys.stdout = open(os.devnull, "w")
+    try:
+        cmd_init(argparse.Namespace())
+    finally:
+        sys.stdout.close()
+        sys.stdout = old
+    return connect()
+
+
+def cmd_hook(_: argparse.Namespace) -> None:
+    """Stdin hook for Claude Code and LuckyAgent.
+
+    Claude UserPromptSubmit: match the user prompt, inject locked translations
+    before the model writes. Claude Stop: count this turn's slugs.
+    LuckyAgent PostToolUse: append the same table to the first tool result of
+    the turn (LuckyAgent has no UserPromptSubmit). Never block.
+    """
+    data: dict = {}
+    event = "UserPromptSubmit"
+    try:
+        data = read_stdin_json()
+        lucky_event = str(data.get("event") or "")
+        if lucky_event in ("PreToolUse", "PostToolUse"):
+            lucky_tool_hook(data)
+            return
+        event = str(data.get("hook_event_name") or "UserPromptSubmit")
+        if event not in ("UserPromptSubmit", "Stop"):
+            emit_hook(event)
+            return
+        if event == "Stop" and data.get("stop_hook_active"):
+            emit_hook("Stop")
+            return
+        con = ensure_terms(connect())
+        word_map, needles = load_alias_index(con)
+
+        if event == "UserPromptSubmit":
+            body = extract_prompt_text(data)
+            if not body or body.startswith(SKIP_USER) or "command-name" in body[:80]:
+                emit_hook("UserPromptSubmit")
+                return
+            slugs = slugs_in_text(body, word_map, needles)
+            rows = lookup_hits(con, slugs)
+            ctx = format_plain_speak_context(rows, EXPLAIN_BELOW) if rows else None
+            emit_hook("UserPromptSubmit", ctx)
+            return
+
+        path = data.get("transcript_path") or ""
+        last_user, last_asst = transcript_texts(path) if path else ("", "")
+        found: set[str] = set()
+        if last_user:
+            found |= slugs_in_text(last_user, word_map, needles)
+        if last_asst:
+            found |= slugs_in_text(last_asst, word_map, needles)
+        if found:
+            bump_slugs(con, sorted(found))
+        emit_hook("Stop")
+    except Exception:
+        if str(data.get("event") or "") in ("PreToolUse", "PostToolUse"):
+            emit_lucky("allow")
+        else:
+            emit_hook(event)
+
+
 def main() -> None:
     p = argparse.ArgumentParser(prog="glossary.py")
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -621,6 +981,12 @@ def main() -> None:
         "import-jiqizhixin",
         help="fetch 机器之心 AI terms into local SQLite (not git; NC license)",
     ).set_defaults(func=cmd_import_jiqizhixin)
+
+    hk = sub.add_parser(
+        "hook",
+        help="stdin hook: Claude UserPromptSubmit/Stop, LuckyAgent PostToolUse",
+    )
+    hk.set_defaults(func=cmd_hook)
 
     args = p.parse_args()
     args.func(args)

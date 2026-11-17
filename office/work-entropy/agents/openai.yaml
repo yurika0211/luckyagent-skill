@@ -1,0 +1,4 @@
+interface:
+  display_name: "工作熵账本"
+  short_description: "用原子证据、同主题专注时间和历史记录估算个人进度与剩余工作时间"
+  default_prompt: "使用 $work-entropy 分析当前任务，建立原子证据账本，计算进度与可信的时间估计。"
