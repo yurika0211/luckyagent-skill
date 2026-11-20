@@ -1,0 +1,4 @@
+interface:
+  display_name: "Smriti Memory"
+  short_description: "Recall relevant local Codex and Claude Code history"
+  default_prompt: "Recall relevant prior project context from local Smriti before starting this task."
