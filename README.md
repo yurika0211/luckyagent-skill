@@ -39,9 +39,14 @@ Source: [openai/skills](https://github.com/openai/skills) curated set. Requires 
 - [`xlsx`](./office/xlsx) — Spreadsheets and CSV cleanup
 
 ### Knowledge & notes
-- [`obsidian-markdown`](./obsidian/obsidian-markdown) — Obsidian Flavored Markdown
-- [`obsidian-cli`](./obsidian/obsidian-cli) — Official Obsidian CLI workflows
-- [`obsidian-bases`](./obsidian/obsidian-bases) — Obsidian Bases (`.base`)
+- [`obsidian-markdown`](./obsidian/obsidian-markdown) — Obsidian Flavored Markdown (wikilinks, embeds, callouts, properties) + references
+- [`obsidian-cli`](./obsidian/obsidian-cli) — Official Obsidian CLI workflows, including plugin and theme development
+- [`obsidian-bases`](./obsidian/obsidian-bases) — Obsidian Bases (`.base`) with functions reference
+- [`obsidian-headless`](./obsidian/obsidian-headless) — Obsidian Sync and Publish from the CLI (`ob`), no desktop app
+- [`json-canvas`](./obsidian/json-canvas) — JSON Canvas (`.canvas`) nodes, edges, groups + examples
+- [`knap`](./obsidian/knap) — Render Markdown templates from JSON/CSV data, batch generation
+
+Source: [obsidianmd/obsidian-skills](https://github.com/obsidianmd/obsidian-skills) (official Obsidian plugin, synced 2026-11-20)
 - [`find-docs`](./knowledge/find-docs) — Current library/framework docs before coding
 - [`defuddle`](./knowledge/defuddle) — Clean URL → Markdown extraction
 - [`plain-speak`](./knowledge/plain-speak) — Plain Chinese, locked glossary translations, explain new terms from local SQLite frequency

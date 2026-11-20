@@ -1,112 +1,141 @@
 ---
 name: obsidian-cli
-description: >
-  Use the official Obsidian CLI (1.12+) for vault operations.
-  Prefer CLI for index-powered ops (search, backlinks, tags, tasks, properties, bases).
-  Fall back to file tools when Obsidian is not running or for simple read/write.
-triggers:
-  - obsidian cli
-  - vault search
-  - backlinks
-  - vault tags
-  - vault tasks
-  - property set
-  - base query
+description: Interact with Obsidian vaults using the Obsidian CLI to read, create, search, and manage notes, tasks, properties, and more. Also supports plugin and theme development with commands to reload plugins, run JavaScript, capture errors, take screenshots, and inspect the DOM. Use when the user asks to interact with their Obsidian vault, manage notes, search vault content, perform vault operations from the command line, or develop and debug Obsidian plugins and themes.
 ---
 
-# Obsidian CLI — Agent Reference
+# Obsidian CLI
 
-## When to Use CLI vs File Tools
+Use the `obsidian` CLI to interact with a running Obsidian instance. Requires Obsidian to be open.
 
-**Use CLI** when you need Obsidian's index or app features:
-search, backlinks, links, tags, tasks, properties, bases, templates, outline, orphans, unresolved links
+## Before using the CLI
 
-**Use file tools** for:
-simple file read/write, bulk text replacement, grep across files — no app dependency
+Run `obsidian help` to check availability. If the command is missing, explain how to turn on the CLI using https://help.obsidian.md/cli. The `obsidian` command ships with the Obsidian installer; don't install the unrelated npm package `obsidian-cli`. If it can't find Obsidian, ask the user to open the desktop app, then retry. In a sandboxed shell the same message can mean the sandbox blocked the CLI's local socket.
 
-## ⚠️ Critical Gotchas (Silent Failures)
+On WSL, run `Obsidian.com` from the Windows install folder, not `Obsidian.exe`. `Obsidian.com` is the console wrapper that prints the output; `Obsidian.exe` exits without printing anything.
 
-Without this skill, these commands **succeed with exit code 0 but return wrong/empty data**:
+The CLI exits with status 0 even when a command fails, so read its output before reporting that a command succeeded.
 
-| Trap | Wrong result | Fix |
-|------|-------------|-----|
-| `tasks todo` | 0 results (scoped to active file only) | `tasks all todo` |
-| `tags counts` | empty | `tags all counts` |
-| `properties format=json` | returns YAML, not JSON | `properties format=tsv` |
-| `search query="x"` | plain text, no structure | `search query="x" format=json matches` |
-| `create name="x"` | opens Obsidian UI (blocking) | add `silent` flag |
-| Error parsing | `$?` = 0 despite errors | parse output for `Error:` |
+Quote parameters for the current shell, and pass note text as literal argument data, never as executable shell syntax.
 
-## Syntax Basics
+## Command reference
 
-```
-obsidian <command> [param=value ...] [flag ...]
+Run `obsidian help` to see all available commands. This is always up to date. Full docs: https://help.obsidian.md/cli
+
+## Syntax
+
+**Parameters** take a value with `=`. Quote values with spaces:
+
+```bash
+obsidian create name="My Note" content="Hello world"
 ```
 
-- **Vault targeting**: `vault="My Vault"` as first param, or run from inside vault dir
-- **File targeting**: `path=exact/path.md` vs `file=name` (link-style resolution)
-- **Params**: `key=value` — quote values with spaces: `name="My Note"`
-- **Flags**: boolean switches, no `=` — e.g. `silent`, `overwrite`, `counts`, `total`
-- **Structured output**: `format=json` (search, base:query), `format=tsv` (properties, tags)
+**Flags** are boolean switches with no value:
 
-## Key Commands
-
-### Read & Write
-```sh
-obsidian read path=note.md
-obsidian append path=note.md content="new content"
-obsidian prepend path=note.md content="frontmatter content"
-obsidian create path=new-note.md content="body" silent
-obsidian delete path=note.md
+```bash
+obsidian create name="My Note" open overwrite
 ```
 
-### Search
-```sh
-obsidian search query="keywords" format=json matches
-obsidian search query="section:content" format=json matches
+Use `overwrite` only when replacing an existing file is intended.
+
+Opening is opt-in: pass `open` to open the file, and add `newtab` to open it in a new tab. There is no `silent` flag.
+
+In `content=`, `\n` becomes a newline and `\t` a tab. Every `\n` and `\t` is converted and there's no escape, so text such as the LaTeX `\theta` or the path `C:\notes` is corrupted. Write content that contains backslashes, or is longer than about 4 KB, directly to the note's file instead.
+
+A dot in a file name is read as the start of an extension. When a name contains a dot, include the extension: `create name="Meeting 2026.11.06.md"`, `rename name="v1.2 notes.md"`, `move to="Archive 2026.10/Note.md"`.
+
+## File targeting
+
+Many commands accept `file` or `path` to target a file. Without either, the active file is used.
+
+- `file=<name>` — resolves like a wikilink (name only, no path needed). `.md` is optional; other file types need their extension, e.g. `file="Projects.base"`. Aliases don't resolve.
+- `path=<path>` — exact path from vault root, e.g. `folder/note.md`
+
+## Vault targeting
+
+Without `vault=`, commands target the vault that contains the current directory, then the most recently focused vault. `vault=<name>` only works as the first parameter; anywhere else it's ignored:
+
+```bash
+obsidian vault="My Vault" search query="test"
 ```
 
-### Tags
-```sh
-obsidian tags all counts
-obsidian tags all format=json
+Use `vault=` when the user has selected a vault. If the target is unclear and the user has several vaults, ask which one before changing files.
+
+## Common patterns
+
+```bash
+obsidian read file="My Note"
+obsidian create name="New Note" template="Template"   # a template replaces content=
+obsidian create name="New Note" content="# Hello" open  # also open in Obsidian
+obsidian append file="My Note" content="New line"
+obsidian rename path="folder/note.md" name="New name"
+obsidian move path="folder/note.md" to="archive/"
+obsidian delete path="folder/note.md"
+obsidian search query="search term" limit=10
+obsidian daily:read
+obsidian daily:append content="- [ ] New task"
+obsidian property:set name="status" value="done" file="My Note"
+obsidian tasks daily todo
+obsidian tags sort=count counts
+obsidian backlinks file="My Note"
 ```
 
-### Tasks
-```sh
-obsidian tasks all todo
-obsidian tasks all done
-obsidian tasks all due:today
+Use `rename` and `move`, not filesystem `mv` or `obsidian eval`, so Obsidian can update links to the file. If other notes link to it and Settings → Files and links → Automatically update internal links is off, Obsidian asks in a dialog and the command waits until someone answers. `delete` moves the file to the trash; don't pass `permanent` unless the user asks for it. Prefer `create` and `append` over `eval` for writing note bodies.
+
+Use `total` on list commands to get a count.
+
+**Output options placement:** `--copy`, `--json`, `--md`, `--tsv`, and `--csv` only work **after** the command name. Putting them before the command (or before `vault=`) fails — often as `Command "--copy" not found` — because the first token is treated as the command. Prefer `vault=` first when used; put double-dash options last:
+
+```bash
+obsidian tasks todo total --copy
+obsidian vault="My Vault" search query="TODO" --copy
+obsidian tasks todo format=json   # many list commands also accept format=
+# Wrong: obsidian --copy vault="My Vault" tasks todo
 ```
 
-### Properties
-```sh
-obsidian properties path=note.md format=tsv
-obsidian properties path=note.md set key=value
-obsidian properties path=note.md remove key
+## Plugin development
+
+### Develop/test cycle
+
+Turn on console capture once with `obsidian dev:debug on`, so messages from the reload are kept. After making code changes to a plugin or theme, follow this workflow:
+
+1. **Reload** the plugin to pick up changes:
+   ```bash
+   obsidian plugin:reload id=my-plugin
+   ```
+2. **Check for errors** — if errors appear, fix and repeat from step 1:
+   ```bash
+   obsidian dev:errors
+   ```
+3. **Verify visually** with a screenshot or DOM inspection:
+   ```bash
+   obsidian dev:screenshot
+   obsidian dev:dom selector=".workspace-leaf" text
+   ```
+4. **Check console output** for warnings or unexpected logs:
+   ```bash
+   obsidian dev:console level=error
+   ```
+
+`dev:screenshot` saves to a temporary file and prints its path. A relative `path=` saves inside the vault.
+
+### Additional developer commands
+
+Run JavaScript in the app context (prefer dedicated commands like `rename`, `move`, `create`, and `append` for vault mutations):
+
+```bash
+obsidian eval code="app.vault.getFiles().length"
 ```
 
-### Backlinks & Links
-```sh
-obsidian backlinks path=note.md format=json
-obsidian links path=note.md format=json
-obsidian unresolved
+Inspect CSS values:
+
+```bash
+obsidian dev:css selector=".workspace-leaf" prop=background-color
 ```
 
-### Bases
-```sh
-obsidian base:query path=base.base format=json
+Toggle mobile emulation:
+
+```bash
+obsidian dev:mobile on
 ```
 
-### Templates
-```sh
-obsidian templates list
-obsidian templates apply template="Daily Note" path=target.md silent
-```
-
-### Utilities
-```sh
-obsidian orphans
-obsidian outline path=note.md
-obsidian stats
-```
+Run `obsidian help` to see additional developer commands including CDP and debugger controls.
