@@ -1,0 +1,7 @@
+interface:
+  display_name: "Plan Me"
+  short_description: "Structure a plan across eight decision dimensions"
+  default_prompt: "Use $plan-me to structure and validate this plan."
+
+policy:
+  allow_implicit_invocation: false

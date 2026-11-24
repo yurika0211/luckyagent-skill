@@ -65,6 +65,7 @@ Source: [obsidianmd/obsidian-skills](https://github.com/obsidianmd/obsidian-skil
 - [`karpathy-ponytail`](./other/karpathy-ponytail) — Coding behavior guidelines
 - [`imagegen`](./other/imagegen) — Raster image generation/editing via LuckyAgent
 - [`aoci-code`](./other/aoci-code) — AOCI-CODE CLI/MCP workflows: init+scan, Overview, maintain Whole-Index
+- [`plan-me`](./other/plan-me) — Structure and stress-test a plan across eight decision dimensions before implementation
 
 ## Skill layout
 
