@@ -66,6 +66,7 @@ Source: [obsidianmd/obsidian-skills](https://github.com/obsidianmd/obsidian-skil
 - [`imagegen`](./other/imagegen) — Raster image generation/editing via LuckyAgent
 - [`aoci-code`](./other/aoci-code) — AOCI-CODE CLI/MCP workflows: init+scan, Overview, maintain Whole-Index
 - [`plan-me`](./other/plan-me) — Structure and stress-test a plan across eight decision dimensions before implementation
+- [`openui`](./other/openui) — Intelligent UI / present_ui 的节点规则。调用 present_ui 前先读这个 skill。
 
 ## Skill layout
 
